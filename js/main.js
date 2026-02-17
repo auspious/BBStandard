@@ -42,8 +42,8 @@
                 document.body.style.overflow = isOpen ? '' : 'hidden';
             });
 
-            // Close on link click
-            links.querySelectorAll('.nav__link').forEach(function (link) {
+            // Close on link click (including mobile CTA)
+            links.querySelectorAll('.nav__link, .nav__mobile-cta').forEach(function (link) {
                 link.addEventListener('click', function () {
                     links.classList.remove('open');
                     toggle.classList.remove('active');

@@ -1509,27 +1509,52 @@ section {
     }
 
     .nav__links {
-        display: none;
+        display: flex;
         position: fixed;
-        top: 0;
+        top: var(--nav-height);
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(255, 255, 255, 0.98);
-        backdrop-filter: blur(20px);
+        background: var(--slate-900);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: var(--space-6);
+        justify-content: flex-start;
+        align-items: stretch;
+        padding: var(--space-8) var(--space-6);
+        gap: 0;
         z-index: 999;
+        transform: translateY(-110%);
+        opacity: 0;
+        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+            opacity 0.3s ease;
+        overflow-y: auto;
     }
 
     .nav__links.open {
-        display: flex;
+        transform: translateY(0);
+        opacity: 1;
     }
 
     .nav__links .nav__link {
-        font-size: 1.05rem;
+        font-size: 1.15rem;
+        font-weight: 500;
+        color: var(--text-inverse);
+        padding: var(--space-4) 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+
+    .nav__links .nav__link:hover,
+    .nav__links .nav__link:active {
+        color: var(--accent-400);
+    }
+
+    .nav__links .nav__link:last-of-type {
+        border-bottom: none;
+    }
+
+    .nav__links .nav__link::after {
+        display: none;
     }
 
     .nav__toggle {
@@ -1541,8 +1566,11 @@ section {
     }
 
     .nav__mobile-cta {
-        display: inline-flex;
-        margin-top: var(--space-4);
+        display: flex;
+        justify-content: center;
+        margin-top: var(--space-8);
+        padding: 14px 24px;
+        font-size: 1rem;
     }
 
     /* ---- HERO MOBILE ---- */
@@ -1616,24 +1644,66 @@ section {
         line-height: 1.4;
     }
 
-    /* ---- TRUST BAR MOBILE ---- */
+    /* ---- TRUST BAR MOBILE — Auto-rotating slideshow ---- */
     .trust-bar {
         padding: var(--space-4) 0;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+        overflow: hidden;
     }
 
     .trust-bar__inner {
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        gap: var(--space-6);
-        min-width: max-content;
-        padding: 0 var(--space-4);
+        position: relative;
+        justify-content: center;
+        min-height: 24px;
     }
 
     .trust-bar__item {
+        position: absolute;
         white-space: nowrap;
-        font-size: 0.7rem;
+        font-size: 0.75rem;
+        opacity: 0;
+        animation: trustFade 12s infinite;
+    }
+
+    .trust-bar__item:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    .trust-bar__item:nth-child(2) {
+        animation-delay: 3s;
+    }
+
+    .trust-bar__item:nth-child(3) {
+        animation-delay: 6s;
+    }
+
+    .trust-bar__item:nth-child(4) {
+        animation-delay: 9s;
+    }
+
+    @keyframes trustFade {
+        0% {
+            opacity: 0;
+            transform: translateY(6px);
+        }
+
+        5% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        20% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        25% {
+            opacity: 0;
+            transform: translateY(-6px);
+        }
+
+        100% {
+            opacity: 0;
+        }
     }
 
     /* ---- RISK NOTICE MOBILE ---- */
