@@ -5,41 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Crowdaxe Capital — Zimbabwe's first SECZ-approved crowdfunding platform. Regulated investment in Private Equity, Debt, and Project-based opportunities with integrated Investor Protection Scheme.">
-    <meta name="keywords"
-        content="Crowdaxe, SECZ, crowdfunding, Zimbabwe, investment, private equity, regulated platform, investor protection">
-    <meta name="author" content="Crowdaxe Capital (Private) Limited">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph -->
+        content="Crowdaxe Capital — Zimbabwe's first SECZ-approved crowdfunding platform. Regulated investment in Private Equity, Debt, and Project-based opportunities.">
     <meta property="og:title" content="Crowdaxe Capital — Regulated Investment Platform">
-    <meta property="og:description"
-        content="Zimbabwe's first SECZ-approved crowdfunding platform with integrated Investor Protection Scheme.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://crowdaxe.com">
-
-    <title>Crowdaxe Capital — Regulated Crowdfunding Platform | SECZ Sandbox Approved</title>
-
-    <!-- Fonts -->
+    <title>Crowdaxe Capital — Regulated Crowdfunding | Zimbabwe</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600;8..60,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-
-    <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- ==============================
-       NAVIGATION
-       ============================== -->
+    <!-- NAVIGATION -->
     <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
         <div class="nav__inner">
             <div class="nav__brand">
-                <a href="#" class="nav__logo" aria-label="Crowdaxe Capital Home">
+                <a href="index.html" class="nav__logo" aria-label="Crowdaxe Capital Home">
                     <img src="images/logo.png" alt="Crowdaxe" class="nav__logo-img"
                         onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
                     <span class="nav__logo-text" style="display:none">CROWDAXE</span>
@@ -48,30 +31,88 @@
             </div>
 
             <div class="nav__links" id="navLinks">
-                <a href="#market" class="nav__link">Market</a>
-                <a href="#structures" class="nav__link">Structures</a>
-                <a href="#ips" class="nav__link">Investor Protection</a>
-                <a href="#markets" class="nav__link">Markets</a>
-                <a href="#leadership" class="nav__link">Leadership</a>
-                <a href="#risk" class="nav__link">Risk</a>
+                <!-- Home -->
+                <div class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </div>
+                <!-- About Us -->
+                <div class="nav__item nav__item--dropdown">
+                    <a href="about.html" class="nav__link">About Us</a>
+                    <button class="nav__dropdown-toggle" aria-label="Expand About Us menu">
+                        <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="nav__dropdown" role="menu">
+                        <a href="about.html" class="nav__dropdown-link" role="menuitem">Company Overview</a>
+                        <a href="about.html#market" class="nav__dropdown-link" role="menuitem">Market Context</a>
+                        <a href="about.html#leadership" class="nav__dropdown-link" role="menuitem">Leadership Team</a>
+                    </div>
+                </div>
+                <!-- Platform -->
+                <div class="nav__item nav__item--dropdown">
+                    <a href="platform.html" class="nav__link">Platform</a>
+                    <button class="nav__dropdown-toggle" aria-label="Expand Platform menu">
+                        <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="nav__dropdown" role="menu">
+                        <a href="platform.html" class="nav__dropdown-link" role="menuitem">Investment Structures</a>
+                        <a href="platform.html#private-equity" class="nav__dropdown-link" role="menuitem">Private
+                            Equity</a>
+                        <a href="platform.html#debt" class="nav__dropdown-link" role="menuitem">Debt</a>
+                        <a href="platform.html#project-based" class="nav__dropdown-link"
+                            role="menuitem">Project-Based</a>
+                        <a href="platform.html#onboarding" class="nav__dropdown-link" role="menuitem">Investor
+                            Onboarding</a>
+                    </div>
+                </div>
+                <!-- Investor Protection (+ Risk) -->
+                <div class="nav__item nav__item--dropdown">
+                    <a href="investor-protection.html" class="nav__link">Investor Protection</a>
+                    <button class="nav__dropdown-toggle" aria-label="Expand Investor Protection menu">
+                        <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="nav__dropdown" role="menu">
+                        <a href="investor-protection.html" class="nav__dropdown-link" role="menuitem">Overview</a>
+                        <a href="risk.html" class="nav__dropdown-link" role="menuitem">Risk</a>
+                    </div>
+                </div>
+                <!-- Markets (+ Ecosystem) -->
+                <div class="nav__item nav__item--dropdown">
+                    <a href="markets.html" class="nav__link">Markets</a>
+                    <button class="nav__dropdown-toggle" aria-label="Expand Markets menu">
+                        <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="nav__dropdown" role="menu">
+                        <a href="markets.html#primary" class="nav__dropdown-link" role="menuitem">Primary Market</a>
+                        <a href="markets.html#secondary" class="nav__dropdown-link" role="menuitem">Secondary Market</a>
+                        <a href="markets.html#flow" class="nav__dropdown-link" role="menuitem">Market Flow</a>
+                        <a href="ecosystem.html" class="nav__dropdown-link" role="menuitem">Ecosystem</a>
+                    </div>
+                </div>
                 <a href="#register" class="btn btn--gold btn--sm nav__mobile-cta">Register Interest</a>
             </div>
 
             <div class="nav__actions">
                 <a href="#register" class="btn btn--primary btn--sm" id="navCta">Register Interest</a>
             </div>
-
             <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
 
-    <!-- ==============================
-       HERO SECTION
-       ============================== -->
+    <!-- HERO -->
     <section class="hero" id="hero">
         <div class="hero__bg" aria-hidden="true">
             <img src="images/Image 1.png" alt="" class="hero__bg-img" loading="eager">
@@ -84,20 +125,16 @@
                     <span class="hero__regulatory-text">Approved for Sandbox Testing — Securities and Exchange
                         Commission of Zimbabwe</span>
                 </div>
-
                 <h1 class="hero__title">
                     <span class="hero__title-line">Regulated Crowdfunding</span>
                     <span class="hero__title-line">Infrastructure for <span class="hero__title-accent">Private
                             Capital</span></span>
                 </h1>
-
                 <p class="hero__description">
-                    Crowdaxe Capital operates Zimbabwe's first SECZ-approved crowdfunding platform.
-                    The platform facilitates structured investment in Private Equity, Debt, and
-                    Project-based opportunities through a regulated marketplace with an integrated
-                    Investor Protection Scheme.
+                    Crowdaxe Capital operates Zimbabwe's first SECZ-approved crowdfunding platform, facilitating
+                    structured investment in Private Equity, Debt, and Project-based opportunities through a regulated
+                    marketplace with an integrated Investor Protection Scheme.
                 </p>
-
                 <div class="hero__actions">
                     <a href="#register" class="btn btn--gold btn--lg" id="heroCta">
                         Register Interest
@@ -106,11 +143,8 @@
                             <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
                     </a>
-                    <a href="#structures" class="btn btn--outline-light">
-                        View Investment Structures
-                    </a>
+                    <a href="platform.html" class="btn btn--outline-light">View Investment Structures</a>
                 </div>
-
                 <div class="hero__metrics">
                     <div class="hero__metric">
                         <div class="hero__metric-value">3</div>
@@ -129,9 +163,7 @@
         </div>
     </section>
 
-    <!-- ==============================
-       REGULATORY BAR
-       ============================== -->
+    <!-- TRUST BAR -->
     <div class="trust-bar" aria-label="Regulatory and trust indicators">
         <div class="container">
             <div class="trust-bar__inner">
@@ -157,8 +189,8 @@
                 </div>
                 <div class="trust-bar__item">
                     <svg class="trust-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path
-                            d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 8v4l3 3" />
                     </svg>
                     <span>USD Denominated</span>
                 </div>
@@ -166,17 +198,15 @@
         </div>
     </div>
 
-    <!-- ==============================
-       RISK NOTICE — PERSISTENT
-       ============================== -->
+    <!-- RISK NOTICE -->
     <div class="risk-notice" role="alert">
         <div class="container">
             <div class="risk-notice__inner">
                 <svg class="risk-notice__icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="12" y1="16" x2="12" y2="12"></line>
-                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="12" y1="16" x2="12" y2="12" />
+                    <line x1="12" y1="8" x2="12.01" y2="8" />
                 </svg>
                 <p><strong>Capital at Risk.</strong> Investing in unlisted securities involves risks including
                     illiquidity and potential total loss of capital. These investments are not covered by the Deposit
@@ -185,572 +215,75 @@
         </div>
     </div>
 
-    <!-- ==============================
-       MARKET CONTEXT
-       ============================== -->
-    <section class="market" id="market">
-        <div class="container">
-            <div class="market__grid">
-                <div class="reveal">
-                    <span class="section-label">Market Context</span>
-                    <h2 class="section-title">Zimbabwe's Private Capital Gap</h2>
-                    <p class="section-subtitle">
-                        Zimbabwe's capital markets are characterised by limited access to formal financing for SMEs and
-                        growth-stage projects. Crowdaxe addresses this structural gap through a technology-enabled,
-                        regulated marketplace that reduces transaction costs and broadens investor access.
-                    </p>
-
-                    <div class="market__sectors">
-                        <div class="market__sector">
-                            <svg class="market__sector-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-                                <polyline points="9 22 9 12 15 12 15 22" />
-                            </svg>
-                            Food &amp; Agriculture
-                        </div>
-                        <div class="market__sector">
-                            <svg class="market__sector-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <circle cx="12" cy="12" r="3" />
-                                <path
-                                    d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
-                            </svg>
-                            Renewable Energy
-                        </div>
-                        <div class="market__sector">
-                            <svg class="market__sector-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <path d="M2 20h20M5 20V10l7-7 7 7v10" />
-                                <path d="M9 20v-6h6v6" />
-                            </svg>
-                            Infrastructure
-                        </div>
-                        <div class="market__sector">
-                            <svg class="market__sector-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                            </svg>
-                            Healthcare
-                        </div>
-                        <div class="market__sector">
-                            <svg class="market__sector-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
-                                <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
-                            </svg>
-                            Mining
-                        </div>
-                        <div class="market__sector">
-                            <svg class="market__sector-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
-                                <path d="M1 10h22" />
-                            </svg>
-                            Fintech
-                        </div>
-                        <div class="market__sector">
-                            <svg class="market__sector-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
-                                <polyline points="14 2 14 8 20 8" />
-                            </svg>
-                            Manufacturing
-                        </div>
-                        <div class="market__sector">
-                            <svg class="market__sector-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5">
-                                <rect x="1" y="3" width="15" height="13" />
-                                <polygon points="23 7 16 12 16 2 23 7" />
-                            </svg>
-                            Transport &amp; Logistics
-                        </div>
-                    </div>
-                </div>
-
-                <div class="market__visual reveal reveal-delay-2">
-                    <div class="market__image-wrapper">
-                        <img src="images/market-context.jpg"
-                            alt="Modern commercial buildings representing Zimbabwe's growing business economy"
-                            class="market__image" loading="lazy">
-                    </div>
-                    <div class="market__stat-card">
-                        <div class="market__stat-value">3</div>
-                        <div class="market__stat-label">Regulated investment structures — Private Equity, Debt, and
-                            Project-based</div>
-                    </div>
-                    <div class="market__stat-card market__stat-card--accent">
-                        <div class="market__stat-value">1st</div>
-                        <div class="market__stat-label">SECZ sandbox-approved crowdfunding platform in Zimbabwe</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==============================
-       INVESTMENT STRUCTURES
-       ============================== -->
-    <section class="structures section--alt" id="structures">
+    <!-- OVERVIEW SECTION -->
+    <section class="overview" id="overview">
         <div class="container">
             <div class="reveal">
-                <span class="section-label">Investment Structures</span>
-                <h2 class="section-title">Three Regulated Funding Mechanisms</h2>
-                <p class="section-subtitle">
-                    Crowdaxe operates three investment structures: Private Equity, Debt, and Project-based fundraising.
-                    All structures share standardised terms and operate under SECZ regulatory oversight.
-                </p>
+                <span class="section-label">The Platform</span>
+                <h2 class="section-title">A Complete Capital Infrastructure</h2>
+                <p class="section-subtitle">Explore every dimension of the Crowdaxe platform — from investment
+                    structures and regulatory compliance to market operations and the Xpetts ecosystem.</p>
             </div>
-
-            <!-- Unified Parameters -->
-            <div class="structures__params reveal reveal-delay-1">
-                <div class="structures__param">
-                    <div class="structures__param-label">Fundraising Cycle</div>
-                    <div class="structures__param-value">Maximum 90 days</div>
-                </div>
-                <div class="structures__param">
-                    <div class="structures__param-label">Minimum Investment</div>
-                    <div class="structures__param-value">USD 100</div>
-                </div>
-                <div class="structures__param">
-                    <div class="structures__param-label">Minimum Target Funding</div>
-                    <div class="structures__param-value">USD 30,000</div>
-                </div>
-                <div class="structures__param">
-                    <div class="structures__param-label">Platform Fee</div>
-                    <div class="structures__param-value">5% of funds raised</div>
-                </div>
-                <div class="structures__param">
-                    <div class="structures__param-label">Carried Interest</div>
-                    <div class="structures__param-value">5% of investor profit</div>
-                </div>
-                <div class="structures__param">
-                    <div class="structures__param-label">IPS Levy</div>
-                    <div class="structures__param-value">1% of funds raised</div>
-                </div>
-                <div class="structures__param">
-                    <div class="structures__param-label">Instrument</div>
-                    <div class="structures__param-value">Unlisted</div>
-                </div>
-                <div class="structures__param">
-                    <div class="structures__param-label">Maximum Subscription</div>
-                    <div class="structures__param-value">Unlimited</div>
-                </div>
-            </div>
-
-            <!-- Structure-Specific Details -->
-            <div class="structures__cards reveal reveal-delay-2">
-                <div class="structures__card">
-                    <div class="structures__card-header">
-                        <h4 class="structures__card-title">Private Equity</h4>
-                    </div>
-                    <div class="structures__card-body">
-                        <div class="structures__card-item">
-                            <span class="structures__card-item-label">Security</span>
-                            <span class="structures__card-item-value">Preferred Equity</span>
-                        </div>
-                        <div class="structures__card-item">
-                            <span class="structures__card-item-label">Primary Market</span>
-                            <span class="structures__card-item-value structures__check">&#10003;</span>
-                        </div>
-                        <div class="structures__card-item">
-                            <span class="structures__card-item-label">Secondary Market</span>
-                            <span class="structures__card-item-value structures__check">&#10003;</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="structures__card">
-                    <div class="structures__card-header">
-                        <h4 class="structures__card-title">Debt</h4>
-                    </div>
-                    <div class="structures__card-body">
-                        <div class="structures__card-item">
-                            <span class="structures__card-item-label">Security</span>
-                            <span class="structures__card-item-value">Preference Shares / Convertible Note /
-                                Other</span>
-                        </div>
-                        <div class="structures__card-item">
-                            <span class="structures__card-item-label">Primary Market</span>
-                            <span class="structures__card-item-value structures__check">&#10003;</span>
-                        </div>
-                        <div class="structures__card-item">
-                            <span class="structures__card-item-label">Secondary Market</span>
-                            <span class="structures__card-item-value structures__check">&#10003;</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="structures__card">
-                    <div class="structures__card-header">
-                        <h4 class="structures__card-title">Project-Based</h4>
-                    </div>
-                    <div class="structures__card-body">
-                        <div class="structures__card-item">
-                            <span class="structures__card-item-label">Security</span>
-                            <span class="structures__card-item-value">Preference Shares / Convertible Note /
-                                Other</span>
-                        </div>
-                        <div class="structures__card-item">
-                            <span class="structures__card-item-label">Primary Market</span>
-                            <span class="structures__card-item-value structures__check">&#10003;</span>
-                        </div>
-                        <div class="structures__card-item">
-                            <span class="structures__card-item-label">Secondary Market</span>
-                            <span class="structures__card-item-value structures__check">&#10003;</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==============================
-       INVESTOR PROTECTION SCHEME
-       ============================== -->
-    <section class="ips section--dark" id="ips">
-        <div class="container">
-            <div class="reveal">
-                <span class="section-label">Investor Protection</span>
-                <h2 class="section-title">Investor Protection Scheme</h2>
-                <p class="section-subtitle">
-                    A dedicated financial mechanism designed to enhance investor confidence and mitigate
-                    platform-level risks within the crowdfunding ecosystem.
-                </p>
-            </div>
-
-            <div class="ips__disclosure reveal reveal-delay-1">
-                <div class="ips__disclosure-section">
-                    <h4 class="ips__disclosure-heading">Purpose</h4>
-                    <p class="ips__disclosure-text">
-                        The IPS establishes governance protocols, mandatory issuer due diligence, and a dedicated
-                        financial backstop for qualifying adverse events. It is designed to enhance investor confidence
-                        and promote sustainable growth across the platform.
-                    </p>
-                </div>
-
-                <div class="ips__disclosure-section">
-                    <h4 class="ips__disclosure-heading">Funding Mechanism</h4>
-                    <p class="ips__disclosure-text">
-                        The Protection Fund is capitalised by a <strong>1% IPS levy</strong> applied to all funds raised
-                        through the platform. All levy funds are held in a segregated account, separate from Crowdaxe
-                        operating accounts, and administered by an independent trustee.
-                    </p>
-                </div>
-
-                <div class="ips__disclosure-section">
-                    <h4 class="ips__disclosure-heading">Coverage Scope</h4>
-                    <p class="ips__disclosure-text">
-                        The IPS provides compensation in predefined scenarios including proven material fraud by an
-                        issuer. Coverage terms, limits, and claims procedures are set out in the IPS Framework Document,
-                        available to registered investors. The IPS does not cover general investment losses, market
-                        risk,
-                        or issuer commercial failure.
-                    </p>
-                </div>
-
-                <div class="ips__disclosure-section">
-                    <h4 class="ips__disclosure-heading">Governance</h4>
-                    <p class="ips__disclosure-text">
-                        The Protection Fund is governed by an independent trustee with fiduciary responsibility for fund
-                        administration, claim adjudication, and reporting. The trustee operates independently of
-                        Crowdaxe Capital management.
-                    </p>
-                </div>
-
-                <div class="ips__disclosure-section ips__disclosure-section--note">
-                    <h4 class="ips__disclosure-heading">Important Notice</h4>
-                    <p class="ips__disclosure-text">
-                        Crowdfunding investments are inherently speculative and often illiquid, with the risk of total
-                        capital loss. The IPS provides an additional layer of oversight but does not guarantee the
-                        return
-                        of invested capital. Investors should not rely on the IPS as the primary form of investment
-                        protection.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==============================
-       PRIMARY & SECONDARY MARKETS
-       ============================== -->
-    <section class="markets" id="markets">
-        <div class="container">
-            <div class="reveal">
-                <span class="section-label">Platform Markets</span>
-                <h2 class="section-title">Primary &amp; Secondary Market Structure</h2>
-                <p class="section-subtitle">
-                    Crowdaxe operates two distinct marketplaces: a primary market for initial investment placement
-                    and a secondary market for liquidity through structured position transfer.
-                </p>
-            </div>
-
-            <div class="markets__flow reveal reveal-delay-1">
-                <div class="markets__flow-item">
-                    <div class="markets__flow-number">01</div>
-                    <h4 class="markets__flow-title">Issuer Application</h4>
-                    <p class="markets__flow-text">SECZ-registered issuers apply to raise capital through the platform
-                        with mandatory documentation and due diligence review.</p>
-                </div>
-
-                <div class="markets__flow-connector" aria-hidden="true">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                </div>
-
-                <div class="markets__flow-item">
-                    <div class="markets__flow-number">02</div>
-                    <h4 class="markets__flow-title">Primary Market</h4>
-                    <p class="markets__flow-text">Approved issuers are introduced to the marketplace. Investors
-                        subscribe to new positions during the fundraising cycle.</p>
-                </div>
-
-                <div class="markets__flow-connector" aria-hidden="true">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7" />
-                    </svg>
-                </div>
-
-                <div class="markets__flow-item">
-                    <div class="markets__flow-number">03</div>
-                    <h4 class="markets__flow-title">Secondary Market</h4>
-                    <p class="markets__flow-text">Existing investors may list positions for transfer. Qualified
-                        investors can acquire existing positions through structured settlement.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==============================
-       INVESTOR ONBOARDING
-       ============================== -->
-    <section class="onboarding section--alt" id="onboarding">
-        <div class="container">
-            <div class="reveal">
-                <span class="section-label">Registration</span>
-                <h2 class="section-title">Investor Onboarding Process</h2>
-                <p class="section-subtitle">
-                    All investors must complete the regulated onboarding process before accessing investment
-                    opportunities. Registration is subject to identity verification and sophistication assessment.
-                </p>
-            </div>
-
-            <div class="onboarding__steps">
-                <div class="onboarding__step reveal reveal-delay-1">
-                    <div class="onboarding__step-number">1</div>
-                    <h4 class="onboarding__step-title">Register</h4>
-                    <p class="onboarding__step-desc">Create an account with personal and contact details.</p>
-                    <div class="onboarding__step-line" aria-hidden="true"></div>
-                </div>
-
-                <div class="onboarding__step reveal reveal-delay-2">
-                    <div class="onboarding__step-number">2</div>
-                    <h4 class="onboarding__step-title">Identity Verification</h4>
-                    <p class="onboarding__step-desc">Submit identity documentation and confirm eligibility (18+ years).
-                    </p>
-                    <div class="onboarding__step-line" aria-hidden="true"></div>
-                </div>
-
-                <div class="onboarding__step reveal reveal-delay-3">
-                    <div class="onboarding__step-number">3</div>
-                    <h4 class="onboarding__step-title">Sophistication Assessment</h4>
-                    <p class="onboarding__step-desc">Complete the investor sophistication assessment as required by
-                        SECZ regulations to confirm suitability for unlisted securities investment.</p>
-                    <div class="onboarding__step-line" aria-hidden="true"></div>
-                </div>
-
-                <div class="onboarding__step reveal reveal-delay-4">
-                    <div class="onboarding__step-number">4</div>
-                    <h4 class="onboarding__step-title">Terms &amp; Risk Acknowledgement</h4>
-                    <p class="onboarding__step-desc">Review platform Terms &amp; Conditions and formally acknowledge
-                        investment risks.</p>
-                    <div class="onboarding__step-line" aria-hidden="true"></div>
-                </div>
-
-                <div class="onboarding__step reveal reveal-delay-4">
-                    <div class="onboarding__step-number">5</div>
-                    <h4 class="onboarding__step-title">Platform Access</h4>
-                    <p class="onboarding__step-desc">Access the investment marketplace as a registered sophisticated
-                        investor.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==============================
-       RISK DISCLOSURE
-       ============================== -->
-    <section class="risk" id="risk">
-        <div class="container">
-            <div class="risk__inner reveal">
-                <div class="risk__header">
-                    <div class="risk__icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path
-                                d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
-                            <line x1="12" y1="9" x2="12" y2="13" />
-                            <line x1="12" y1="17" x2="12.01" y2="17" />
+            <div class="overview-cards">
+                <a href="about.html" class="overview-card reveal reveal-delay-1">
+                    <div class="overview-card__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                            <polyline points="9 22 9 12 15 12 15 22" />
                         </svg>
                     </div>
-                    <div>
-                        <h2 class="risk__title">Risk Disclosure</h2>
-                        <p class="risk__text">
-                            <strong>Investing in private companies and unlisted securities involves substantial risks,
-                                including illiquidity, lack of dividends, potential loss of the entire investment, and
-                                dilution. These investments should only form part of a diversified portfolio.</strong>
-                        </p>
+                    <div class="overview-card__label">About</div>
+                    <div class="overview-card__title">Company &amp; Market Context</div>
+                    <p class="overview-card__text">Who we are, the market gap we address, and the leadership team
+                        driving the platform.</p>
+                    <div class="overview-card__link">
+                        Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
                     </div>
-                </div>
-
-                <div class="risk__points">
-                    <div class="risk__point">
-                        <span class="risk__point-bullet" aria-hidden="true"></span>
-                        <span>Crowdaxe is targeted exclusively at investors who are sufficiently sophisticated to
-                            understand these risks and make their own investment decisions.</span>
-                    </div>
-                    <div class="risk__point">
-                        <span class="risk__point-bullet" aria-hidden="true"></span>
-                        <span>You will only be able to invest via Crowdaxe once you are registered as sufficiently
-                            sophisticated under the applicable SECZ framework.</span>
-                    </div>
-                    <div class="risk__point">
-                        <span class="risk__point-bullet" aria-hidden="true"></span>
-                        <span>Investment opportunities presented on the platform are not offers to the public.
-                            Investments can only be made by registered members of Crowdaxe.</span>
-                    </div>
-                    <div class="risk__point">
-                        <span class="risk__point-bullet" aria-hidden="true"></span>
-                        <span>Past performance is not a reliable indicator of future results.</span>
-                    </div>
-                    <div class="risk__point">
-                        <span class="risk__point-bullet" aria-hidden="true"></span>
-                        <span>Crowdaxe Capital (Private) Limited has been approved for sandbox testing by the Securities
-                            and Exchange Commission of Zimbabwe (SECZ). Crowdaxe does not provide investment, tax, or
-                            legal advice. Seek independent professional advice as required.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==============================
-       LEADERSHIP
-       ============================== -->
-    <section class="leadership section--alt" id="leadership">
-        <div class="container">
-            <div class="reveal">
-                <span class="section-label">Leadership</span>
-                <h2 class="section-title">Executive Team</h2>
-                <p class="section-subtitle">
-                    Experienced professionals with backgrounds in governance, law, technology, and financial services.
-                </p>
-            </div>
-
-            <div class="leadership__grid">
-                <div class="leadership__card reveal reveal-delay-1">
-                    <div class="leadership__card-photo">
-                        <img src="images/leadership-01.jpg" alt="Kingston Gamuchirai Leon Kamba — Chairman & CEO"
-                            class="leadership__card-img" loading="lazy">
-                        <div class="leadership__card-overlay">
-                            <span class="leadership__card-initials">KK</span>
-                        </div>
-                    </div>
-                    <div class="leadership__card-body">
-                        <h4 class="leadership__card-name">Kingston Gamuchirai Leon Kamba</h4>
-                        <p class="leadership__card-role">Chairman &amp; CEO</p>
-                        <p class="leadership__card-bio">MSc Integrated Governance, University of Westminster (UK).
-                            Strategic leadership in governance, regulatory compliance, and capital markets development
-                            across public and private sectors.</p>
-                    </div>
-                </div>
-
-                <div class="leadership__card reveal reveal-delay-2">
-                    <div class="leadership__card-photo">
-                        <img src="images/leadership-02.jpg" alt="Tafadzwa Ralph Mugabe — Head of Legal & Compliance"
-                            class="leadership__card-img" loading="lazy">
-                        <div class="leadership__card-overlay">
-                            <span class="leadership__card-initials">TM</span>
-                        </div>
-                    </div>
-                    <div class="leadership__card-body">
-                        <h4 class="leadership__card-name">Tafadzwa Ralph Mugabe</h4>
-                        <p class="leadership__card-role">Head of Legal &amp; Compliance</p>
-                        <p class="leadership__card-bio">LL.M (International Human Rights Law) cum laude. Over fifteen
-                            years of legal and compliance experience across local, regional, and international
-                            regulatory frameworks.</p>
-                    </div>
-                </div>
-
-                <div class="leadership__card reveal reveal-delay-3">
-                    <div class="leadership__card-photo">
-                        <img src="images/leadership-03.jpg" alt="Tinotenda Chirume — Chief Technology Officer"
-                            class="leadership__card-img" loading="lazy">
-                        <div class="leadership__card-overlay">
-                            <span class="leadership__card-initials">TC</span>
-                        </div>
-                    </div>
-                    <div class="leadership__card-body">
-                        <h4 class="leadership__card-name">Tinotenda Chirume</h4>
-                        <p class="leadership__card-role">Chief Technology Officer</p>
-                        <p class="leadership__card-bio">BSc (Hons) Information Technology, Chinhoyi University of
-                            Technology. Leads platform architecture, security infrastructure, and technology operations.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==============================
-       ECOSYSTEM
-       ============================== -->
-    <section class="xpetts" id="xpetts">
-        <div class="container">
-            <div class="reveal">
-                <span class="section-label">Ecosystem</span>
-                <h2 class="section-title">Xpetts — Issuer Support Network</h2>
-                <p class="section-subtitle">
-                    Xpetts is Crowdaxe's integrated support ecosystem, providing issuers with mentorship, networking,
-                    and market exposure beyond capital access. All issuers on the Crowdaxe platform have access to
-                    Xpetts resources.
-                </p>
-            </div>
-
-            <div class="xpetts__grid">
-                <div class="xpetts__card reveal reveal-delay-1">
-                    <div class="xpetts__card-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                </a>
+                <a href="platform.html" class="overview-card reveal reveal-delay-2">
+                    <div class="overview-card__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.5">
                             <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
                             <path d="M1 10h22" />
                         </svg>
                     </div>
-                    <h4 class="xpetts__card-title">Crowdaxe Platform</h4>
-                    <p class="xpetts__card-text">Regulated crowdfunding marketplace approved by SECZ. Primary
-                        infrastructure for issuer fundraising and investor participation.</p>
-                </div>
-
-                <div class="xpetts__card reveal reveal-delay-2">
-                    <div class="xpetts__card-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z" />
-                            <path d="M19 10v2a7 7 0 01-14 0v-2" />
-                            <line x1="12" y1="19" x2="12" y2="23" />
-                            <line x1="8" y1="23" x2="16" y2="23" />
+                    <div class="overview-card__label">Platform</div>
+                    <div class="overview-card__title">Investment Structures</div>
+                    <p class="overview-card__text">Private Equity, Debt, and Project-Based structures with standardised
+                        terms and SECZ oversight.</p>
+                    <div class="overview-card__link">
+                        Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
                     </div>
-                    <h4 class="xpetts__card-title">Xpetts Talk</h4>
-                    <p class="xpetts__card-text">Industry programming covering private equity, market developments, and
-                        interviews with sector participants and investment professionals.</p>
-                </div>
-
-                <div class="xpetts__card reveal reveal-delay-3">
-                    <div class="xpetts__card-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                </a>
+                <a href="investor-protection.html" class="overview-card reveal reveal-delay-3">
+                    <div class="overview-card__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <div class="overview-card__label">Protection</div>
+                    <div class="overview-card__title">Investor Protection Scheme</div>
+                    <p class="overview-card__text">A dedicated financial backstop, independent trustee governance, and
+                        1% IPS levy segregated fund.</p>
+                    <div class="overview-card__link">
+                        Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </a>
+                <a href="ecosystem.html" class="overview-card reveal reveal-delay-4">
+                    <div class="overview-card__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.5">
                             <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
                             <circle cx="9" cy="7" r="4" />
@@ -758,27 +291,31 @@
                             <path d="M16 3.13a4 4 0 010 7.75" />
                         </svg>
                     </div>
-                    <h4 class="xpetts__card-title">Xpetts Events</h4>
-                    <p class="xpetts__card-text">Structured networking connecting issuers, investors, and industry
-                        specialists. Invitation-based events for qualified participants.</p>
-                </div>
+                    <div class="overview-card__label">Ecosystem</div>
+                    <div class="overview-card__title">Xpetts Network</div>
+                    <p class="overview-card__text">Mentorship, industry events, and market exposure beyond capital — for
+                        every issuer on the platform.</p>
+                    <div class="overview-card__link">
+                        Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- ==============================
-       REGISTRATION CTA
-       ============================== -->
+    <!-- REGISTER CTA -->
     <section class="cta-final" id="register">
         <div class="cta-final__bg" aria-hidden="true"></div>
         <div class="container">
             <div class="cta-final__content reveal">
                 <span class="section-label section-label--centered">Get Started</span>
                 <h2 class="cta-final__title">Register Your Interest</h2>
-                <p class="cta-final__text">
-                    Crowdaxe is currently operating within the SECZ regulatory sandbox. Register your interest
-                    to be notified when the platform opens for investor registration or issuer applications.
-                </p>
+                <p class="cta-final__text">Crowdaxe is currently operating within the SECZ regulatory sandbox. Register
+                    your interest to be notified when the platform opens for investor registration or issuer
+                    applications.</p>
                 <div class="cta-final__actions">
                     <a href="#" class="btn btn--gold btn--lg" id="finalRegisterCta">
                         Register as an Investor
@@ -787,86 +324,70 @@
                             <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
                     </a>
-                    <a href="#" class="btn btn--outline-light" id="finalIssuerCta">
-                        Apply as an Issuer
-                    </a>
+                    <a href="#" class="btn btn--outline-light" id="finalIssuerCta">Apply as an Issuer</a>
                 </div>
-                <p class="cta-final__disclaimer">
-                    Registration does not constitute an offer or guarantee of access. All applicants are subject
-                    to KYC, identity verification, and sophistication assessment.
-                </p>
+                <p class="cta-final__disclaimer">Registration does not constitute an offer or guarantee of access. All
+                    applicants are subject to KYC, identity verification, and sophistication assessment.</p>
             </div>
         </div>
     </section>
 
-    <!-- ==============================
-       FOOTER
-       ============================== -->
-    <footer class="footer" id="footer" role="contentinfo">
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <!-- Footer Risk Warning -->
             <div class="footer__risk-warning">
                 <p><strong>Capital at Risk.</strong> Investing in unlisted securities involves risks including
-                    illiquidity and potential total loss of capital. These investments are not covered by the
-                    Deposit Protection Scheme. Seek independent advice where appropriate.</p>
+                    illiquidity and potential total loss of capital. These investments are not covered by the Deposit
+                    Protection Scheme. Seek independent advice where appropriate.</p>
             </div>
-
             <div class="footer__grid">
                 <div>
                     <div class="footer__brand">
                         <img src="images/logo.png" alt="Crowdaxe" class="footer__logo-img">
                         <span class="footer__badge">SECZ Sandbox</span>
                     </div>
-                    <p class="footer__brand-text">
-                        Crowdaxe Capital (Private) Limited<br>
-                        Zimbabwe's first SECZ sandbox-approved crowdfunding platform
-                        with integrated Investor Protection Scheme.
-                    </p>
-                    <p class="footer__regulatory-note">
-                        Approved for sandbox testing by the Securities and Exchange Commission of Zimbabwe.
-                    </p>
+                    <p class="footer__brand-text">Crowdaxe Capital (Private) Limited<br>Zimbabwe's first SECZ
+                        sandbox-approved crowdfunding platform with integrated Investor Protection Scheme.</p>
+                    <p class="footer__regulatory-note">Approved for sandbox testing by the Securities and Exchange
+                        Commission of Zimbabwe.</p>
                 </div>
-
+                <div>
+                    <h4 class="footer__heading">About</h4>
+                    <a href="about.html" class="footer__link">Company Overview</a>
+                    <a href="about.html#market" class="footer__link">Market Context</a>
+                    <a href="about.html#leadership" class="footer__link">Leadership Team</a>
+                </div>
                 <div>
                     <h4 class="footer__heading">Platform</h4>
-                    <a href="#structures" class="footer__link">Investment Structures</a>
-                    <a href="#ips" class="footer__link">Investor Protection</a>
-                    <a href="#markets" class="footer__link">Primary Market</a>
-                    <a href="#markets" class="footer__link">Secondary Market</a>
+                    <a href="platform.html" class="footer__link">Investment Structures</a>
+                    <a href="investor-protection.html" class="footer__link">Investor Protection</a>
+                    <a href="markets.html" class="footer__link">Primary Market</a>
+                    <a href="markets.html#secondary" class="footer__link">Secondary Market</a>
+                    <a href="ecosystem.html" class="footer__link">Xpetts Ecosystem</a>
                 </div>
-
                 <div>
-                    <h4 class="footer__heading">Company</h4>
-                    <a href="#leadership" class="footer__link">Leadership</a>
-                    <a href="#xpetts" class="footer__link">Xpetts Ecosystem</a>
-                    <a href="https://www.xpetts.com" class="footer__link" target="_blank" rel="noopener">Xpetts.com</a>
-                    <a href="#risk" class="footer__link">Risk Disclosure</a>
-                </div>
-
-                <div>
-                    <h4 class="footer__heading">Regulatory</h4>
-                    <a href="#" class="footer__link">Terms &amp; Conditions</a>
-                    <a href="#" class="footer__link">Privacy Policy</a>
-                    <a href="#" class="footer__link">Investor Terms</a>
-                    <a href="#" class="footer__link">IPS Framework</a>
-                    <a href="#" class="footer__link">SECZ Compliance</a>
+                    <h4 class="footer__heading">Legal</h4>
+                    <a href="risk.html" class="footer__link">Risk Disclosure</a>
+                    <a href="resources/Crowdaxe - Rules &amp; Terms of Use 30.01.2026.pdf" class="footer__link"
+                        download>Terms &amp; Conditions</a>
+                    <a href="resources/Crowdaxe - Privacy Policy 30012026.pdf" class="footer__link" download>Privacy
+                        Policy</a>
+                    <a href="resources/Crowdaxe - Investor Terms 30012026.pdf" class="footer__link" download>Investor
+                        Terms</a>
+                    <a href="resources/IPS Rulebook.pdf" class="footer__link" download>IPS Framework</a>
                 </div>
             </div>
-
             <div class="footer__bottom">
-                <div class="footer__company-info">
-                    <span>&copy; 2026 Crowdaxe Capital (Private) Limited. All rights reserved.</span>
-                </div>
+                <span>&copy; 2026 Crowdaxe Capital (Private) Limited. All rights reserved.</span>
                 <div class="footer__legal-links">
                     <a href="#" class="footer__link">Terms</a>
                     <a href="#" class="footer__link">Privacy</a>
-                    <a href="#" class="footer__link">Cookies</a>
+                    <a href="risk.html" class="footer__link">Risk</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="js/main.js"></script>
 </body>
 

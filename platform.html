@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Crowdaxe Capital investment structures — Private Equity, Debt, and Project-Based crowdfunding with standardised SECZ-regulated terms.">
+    <title>Investment Platform — Crowdaxe Capital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+        <div class="nav__inner">
+            <div class="nav__brand">
+                <a href="index.html" class="nav__logo">
+                    <img src="images/logo.png" alt="Crowdaxe" class="nav__logo-img"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+                    <span class="nav__logo-text" style="display:none">CROWDAXE</span>
+                </a>
+                <span class="nav__badge">SECZ Sandbox</span>
+            </div>
+            <div class="nav__links" id="navLinks">
+                <div class="nav__item"><a href="index.html" class="nav__link">Home</a></div>
+                <div class="nav__item nav__item--dropdown">
+                    <a href="about.html" class="nav__link">About Us</a>
+                    <button class="nav__dropdown-toggle" aria-label="Expand About Us menu"><svg class="nav__chevron"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg></button>
+                    <div class="nav__dropdown" role="menu">
+                        <a href="about.html" class="nav__dropdown-link" role="menuitem">Company Overview</a>
+                        <a href="about.html#market" class="nav__dropdown-link" role="menuitem">Market Context</a>
+                        <a href="about.html#leadership" class="nav__dropdown-link" role="menuitem">Leadership Team</a>
+                    </div>
+                </div>
+                <div class="nav__item nav__item--dropdown">
+                    <a href="platform.html" class="nav__link">Platform</a>
+                    <button class="nav__dropdown-toggle" aria-label="Expand Platform menu"><svg class="nav__chevron"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg></button>
+                    <div class="nav__dropdown" role="menu">
+                        <a href="platform.html" class="nav__dropdown-link" role="menuitem">Investment Structures</a>
+                        <a href="platform.html#private-equity" class="nav__dropdown-link" role="menuitem">Private
+                            Equity</a>
+                        <a href="platform.html#debt" class="nav__dropdown-link" role="menuitem">Debt</a>
+                        <a href="platform.html#project-based" class="nav__dropdown-link"
+                            role="menuitem">Project-Based</a>
+                        <a href="platform.html#onboarding" class="nav__dropdown-link" role="menuitem">Investor
+                            Onboarding</a>
+                    </div>
+                </div>
+                <div class="nav__item nav__item--dropdown">
+                    <a href="investor-protection.html" class="nav__link">Investor Protection</a>
+                    <button class="nav__dropdown-toggle" aria-label="Expand Investor Protection menu"><svg
+                            class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg></button>
+                    <div class="nav__dropdown" role="menu">
+                        <a href="investor-protection.html" class="nav__dropdown-link" role="menuitem">Overview</a>
+                        <a href="risk.html" class="nav__dropdown-link" role="menuitem">Risk</a>
+                    </div>
+                </div>
+                <div class="nav__item nav__item--dropdown">
+                    <a href="markets.html" class="nav__link">Markets</a>
+                    <button class="nav__dropdown-toggle" aria-label="Expand Markets menu"><svg class="nav__chevron"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg></button>
+                    <div class="nav__dropdown" role="menu">
+                        <a href="markets.html#primary" class="nav__dropdown-link" role="menuitem">Primary Market</a>
+                        <a href="markets.html#secondary" class="nav__dropdown-link" role="menuitem">Secondary Market</a>
+                        <a href="markets.html#flow" class="nav__dropdown-link" role="menuitem">Market Flow</a>
+                        <a href="ecosystem.html" class="nav__dropdown-link" role="menuitem">Ecosystem</a>
+                    </div>
+                </div>
+                <a href="index.html#register" class="btn btn--gold btn--sm nav__mobile-cta">Register Interest</a>
+            </div>
+            <div class="nav__actions">
+                <a href="index.html#register" class="btn btn--primary btn--sm">Register Interest</a>
+            </div>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="container">
+            <div class="page-hero__content">
+                <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="page-hero__breadcrumb-sep">›</span>
+                    <span>Platform</span>
+                </nav>
+                <div class="page-hero__label">Investment Platform</div>
+                <h1 class="page-hero__title">Three Regulated Funding Mechanisms</h1>
+                <p class="page-hero__subtitle">Private Equity, Debt, and Project-Based structures — all operating under
+                    standardised SECZ-regulated terms with minimum USD 100 entry and integrated Investor Protection.</p>
+            </div>
+        </div>
+    </header>
+
+    <section
+        style="background:var(--bg-secondary); padding:var(--space-12) 0; border-bottom:1px solid var(--border-light);">
+        <div class="container">
+            <div class="reveal">
+                <span class="section-label">Shared Parameters</span>
+                <h2 class="section-title">Platform-Wide Terms</h2>
+                <p class="section-subtitle">These parameters apply uniformly across all three investment structures.</p>
+            </div>
+            <div class="structures__params reveal reveal-delay-1">
+                <div class="structures__param">
+                    <div class="structures__param-label">Fundraising Cycle</div>
+                    <div class="structures__param-value">Max 90 days</div>
+                </div>
+                <div class="structures__param">
+                    <div class="structures__param-label">Minimum Investment</div>
+                    <div class="structures__param-value">USD 100</div>
+                </div>
+                <div class="structures__param">
+                    <div class="structures__param-label">Min. Target Funding</div>
+                    <div class="structures__param-value">USD 30,000</div>
+                </div>
+                <div class="structures__param">
+                    <div class="structures__param-label">Platform Fee</div>
+                    <div class="structures__param-value">5% of funds raised</div>
+                </div>
+                <div class="structures__param">
+                    <div class="structures__param-label">Carried Interest</div>
+                    <div class="structures__param-value">5% of investor profit</div>
+                </div>
+                <div class="structures__param">
+                    <div class="structures__param-label">IPS Levy</div>
+                    <div class="structures__param-value">1% of funds raised</div>
+                </div>
+                <div class="structures__param">
+                    <div class="structures__param-label">Instrument</div>
+                    <div class="structures__param-value">Unlisted</div>
+                </div>
+                <div class="structures__param">
+                    <div class="structures__param-label">Max Subscription</div>
+                    <div class="structures__param-value">Unlimited</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="structures" style="padding:var(--space-16) 0; background:var(--bg-primary);">
+        <div class="container">
+            <div class="reveal">
+                <span class="section-label">Investment Structures</span>
+                <h2 class="section-title">Select a Structure</h2>
+            </div>
+            <div class="tabs" data-tabs id="structureTabs">
+                <div class="tabs__nav" role="tablist">
+                    <button class="tab__btn active" role="tab" data-tab="private-equity">Private Equity</button>
+                    <button class="tab__btn" role="tab" data-tab="debt">Debt</button>
+                    <button class="tab__btn" role="tab" data-tab="project-based">Project-Based</button>
+                </div>
+
+                <div class="tab__panel active" id="private-equity" role="tabpanel">
+                    <div class="market__grid reveal">
+                        <div>
+                            <span class="section-label">Structure 01</span>
+                            <h2 class="section-title">Private Equity</h2>
+                            <p class="section-subtitle">Preferred equity positions in growth-stage companies. Investors
+                                receive an ownership stake with defined rights, with exit opportunities through both
+                                primary and secondary markets.</p>
+                            <div class="info-table-wrap">
+                                <table class="info-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Security Type</td>
+                                            <td>Preferred Equity</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Primary Market</td>
+                                            <td>&#10003; Available</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Secondary Market</td>
+                                            <td>&#10003; Available</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Minimum Investment</td>
+                                            <td>USD 100</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Platform Fee</td>
+                                            <td>5% of funds raised</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Carried Interest</td>
+                                            <td>5% of investor profit</td>
+                                        </tr>
+                                        <tr>
+                                            <td>IPS Levy</td>
+                                            <td>1% of funds raised</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fundraising Cycle</td>
+                                            <td>Maximum 90 days</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Instrument</td>
+                                            <td>Unlisted</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="market__visual">
+                            <div class="market__stat-card market__stat-card--accent"
+                                style="margin-bottom:var(--space-4);">
+                                <div class="market__stat-value">Preferred Equity</div>
+                                <div class="market__stat-label">Investors receive preferred shares with defined rights
+                                    and liquidation preferences.</div>
+                            </div>
+                            <div class="market__stat-card">
+                                <div class="market__stat-value">Dual Market</div>
+                                <div class="market__stat-label">Positions tradeable on both Primary and Secondary
+                                    markets for liquidity.</div>
+                            </div>
+                            <div style="margin-top:var(--space-6);"><a href="index.html#register"
+                                    class="btn btn--gold btn--lg" style="width:100%; justify-content:center;">Register
+                                    Interest in Private Equity</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab__panel" id="debt" role="tabpanel">
+                    <div class="market__grid reveal">
+                        <div>
+                            <span class="section-label">Structure 02</span>
+                            <h2 class="section-title">Debt</h2>
+                            <p class="section-subtitle">Fixed-income instruments structured as preference shares,
+                                convertible notes, or other defined debt securities. Predictable return profiles for
+                                income-focused investors.</p>
+                            <div class="info-table-wrap">
+                                <table class="info-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Security Type</td>
+                                            <td>Preference Shares / Convertible Note / Other</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Primary Market</td>
+                                            <td>&#10003; Available</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Secondary Market</td>
+                                            <td>&#10003; Available</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Minimum Investment</td>
+                                            <td>USD 100</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Platform Fee</td>
+                                            <td>5% of funds raised</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Carried Interest</td>
+                                            <td>5% of investor profit</td>
+                                        </tr>
+                                        <tr>
+                                            <td>IPS Levy</td>
+                                            <td>1% of funds raised</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fundraising Cycle</td>
+                                            <td>Maximum 90 days</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Instrument</td>
+                                            <td>Unlisted</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="market__visual">
+                            <div class="market__stat-card market__stat-card--accent"
+                                style="margin-bottom:var(--space-4);">
+                                <div class="market__stat-value">Fixed Income</div>
+                                <div class="market__stat-label">Defined return profiles through structured debt
+                                    instruments with agreed repayment terms.</div>
+                            </div>
+                            <div class="market__stat-card">
+                                <div class="market__stat-value">Convertible</div>
+                                <div class="market__stat-label">Optional conversion to equity at defined trigger events,
+                                    offering upside participation.</div>
+                            </div>
+                            <div style="margin-top:var(--space-6);"><a href="index.html#register"
+                                    class="btn btn--gold btn--lg" style="width:100%; justify-content:center;">Register
+                                    Interest in Debt</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab__panel" id="project-based" role="tabpanel">
+                    <div class="market__grid reveal">
+                        <div>
+                            <span class="section-label">Structure 03</span>
+                            <h2 class="section-title">Project-Based</h2>
+                            <p class="section-subtitle">Capital raised for defined projects with ring-fenced use of
+                                proceeds. Returns are tied to project revenue or completion milestones, structured via
+                                preference shares or convertible notes.</p>
+                            <div class="info-table-wrap">
+                                <table class="info-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Security Type</td>
+                                            <td>Preference Shares / Convertible Note / Other</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Primary Market</td>
+                                            <td>&#10003; Available</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Secondary Market</td>
+                                            <td>&#10003; Available</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Minimum Investment</td>
+                                            <td>USD 100</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Platform Fee</td>
+                                            <td>5% of funds raised</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Carried Interest</td>
+                                            <td>5% of investor profit</td>
+                                        </tr>
+                                        <tr>
+                                            <td>IPS Levy</td>
+                                            <td>1% of funds raised</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fundraising Cycle</td>
+                                            <td>Maximum 90 days</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Instrument</td>
+                                            <td>Unlisted</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="market__visual">
+                            <div class="market__stat-card market__stat-card--accent"
+                                style="margin-bottom:var(--space-4);">
+                                <div class="market__stat-value">Ring-Fenced</div>
+                                <div class="market__stat-label">Proceeds are dedicated exclusively to defined project
+                                    activities with milestone reporting.</div>
+                            </div>
+                            <div class="market__stat-card">
+                                <div class="market__stat-value">Sector Agnostic</div>
+                                <div class="market__stat-label">Applicable across agriculture, energy, infrastructure,
+                                    and other priority sectors.</div>
+                            </div>
+                            <div style="margin-top:var(--space-6);"><a href="index.html#register"
+                                    class="btn btn--gold btn--lg" style="width:100%; justify-content:center;">Register
+                                    Interest in Project-Based</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="onboarding section--alt" id="onboarding">
+        <div class="container">
+            <div class="reveal">
+                <span class="section-label">Registration</span>
+                <h2 class="section-title">Investor Onboarding Process</h2>
+                <p class="section-subtitle">All investors must complete the regulated onboarding process before
+                    accessing investment opportunities. Registration is subject to identity verification and
+                    sophistication assessment.</p>
+            </div>
+            <div class="onboarding__steps">
+                <div class="onboarding__step reveal reveal-delay-1">
+                    <div class="onboarding__step-number">1</div>
+                    <h4 class="onboarding__step-title">Register</h4>
+                    <p class="onboarding__step-desc">Create an account with personal and contact details.</p>
+                    <div class="onboarding__step-line" aria-hidden="true"></div>
+                </div>
+                <div class="onboarding__step reveal reveal-delay-2">
+                    <div class="onboarding__step-number">2</div>
+                    <h4 class="onboarding__step-title">Identity Verification</h4>
+                    <p class="onboarding__step-desc">Submit identity documentation and confirm eligibility (18+).</p>
+                    <div class="onboarding__step-line" aria-hidden="true"></div>
+                </div>
+                <div class="onboarding__step reveal reveal-delay-3">
+                    <div class="onboarding__step-number">3</div>
+                    <h4 class="onboarding__step-title">Sophistication Assessment</h4>
+                    <p class="onboarding__step-desc">Complete the investor sophistication assessment as required by SECZ
+                        regulations.</p>
+                    <div class="onboarding__step-line" aria-hidden="true"></div>
+                </div>
+                <div class="onboarding__step reveal reveal-delay-4">
+                    <div class="onboarding__step-number">4</div>
+                    <h4 class="onboarding__step-title">Terms &amp; Risk Acknowledgement</h4>
+                    <p class="onboarding__step-desc">Review Terms &amp; Conditions and formally acknowledge investment
+                        risks.</p>
+                    <div class="onboarding__step-line" aria-hidden="true"></div>
+                </div>
+                <div class="onboarding__step reveal reveal-delay-4">
+                    <div class="onboarding__step-number">5</div>
+                    <h4 class="onboarding__step-title">Platform Access</h4>
+                    <p class="onboarding__step-desc">Access the investment marketplace as a registered sophisticated
+                        investor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__risk-warning">
+                <p><strong>Capital at Risk.</strong> Investing in unlisted securities involves risks including
+                    illiquidity and potential total loss of capital. Seek independent advice where appropriate.</p>
+            </div>
+            <div class="footer__grid">
+                <div>
+                    <div class="footer__brand"><img src="images/logo.png" alt="Crowdaxe" class="footer__logo-img"><span
+                            class="footer__badge">SECZ Sandbox</span></div>
+                    <p class="footer__brand-text">Crowdaxe Capital (Private) Limited<br>Zimbabwe's first SECZ
+                        sandbox-approved crowdfunding platform.</p>
+                </div>
+                <div>
+                    <h4 class="footer__heading">About</h4>
+                    <a href="about.html" class="footer__link">Company Overview</a>
+                    <a href="about.html#market" class="footer__link">Market Context</a>
+                    <a href="about.html#leadership" class="footer__link">Leadership Team</a>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Platform</h4>
+                    <a href="platform.html" class="footer__link">Investment Structures</a>
+                    <a href="investor-protection.html" class="footer__link">Investor Protection</a>
+                    <a href="markets.html" class="footer__link">Markets</a>
+                    <a href="ecosystem.html" class="footer__link">Ecosystem</a>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Legal</h4>
+                    <a href="risk.html" class="footer__link">Risk Disclosure</a>
+                    <a href="resources/Crowdaxe - Rules &amp; Terms of Use 30.01.2026.pdf" class="footer__link"
+                        download>Terms &amp; Conditions</a>
+                    <a href="resources/Crowdaxe - Privacy Policy 30012026.pdf" class="footer__link" download>Privacy
+                        Policy</a>
+                    <a href="resources/Crowdaxe - Investor Terms 30012026.pdf" class="footer__link" download>Investor
+                        Terms</a>
+                    <a href="resources/IPS Rulebook.pdf" class="footer__link" download>IPS Framework</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Crowdaxe Capital (Private) Limited. All rights reserved.</span>
+                <div class="footer__legal-links">
+                    <a href="#" class="footer__link">Terms</a>
+                    <a href="#" class="footer__link">Privacy</a>
+                    <a href="risk.html" class="footer__link">Risk</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

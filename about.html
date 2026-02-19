@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="About Crowdaxe Capital — Company overview, Zimbabwe's private capital market context, and our leadership team.">
+    <title>About Us — Crowdaxe Capital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+        <div class="nav__inner">
+            <div class="nav__brand">
+                <a href="index.html" class="nav__logo">
+                    <img src="images/logo.png" alt="Crowdaxe" class="nav__logo-img"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+                    <span class="nav__logo-text" style="display:none">CROWDAXE</span>
+                </a>
+                <span class="nav__badge">SECZ Sandbox</span>
+            </div>
+            <div class="nav__links" id="navLinks">
+                <div class="nav__item"><a href="index.html" class="nav__link">Home</a></div>
+                <div class="nav__item nav__item--dropdown">
+                    <a href="about.html" class="nav__link">About Us</a>
+                    <button class="nav__dropdown-toggle" aria-label="Expand About Us menu"><svg class="nav__chevron"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg></button>
+                    <div class="nav__dropdown" role="menu">
+                        <a href="about.html" class="nav__dropdown-link" role="menuitem">Company Overview</a>
+                        <a href="about.html#market" class="nav__dropdown-link" role="menuitem">Market Context</a>
+                        <a href="about.html#leadership" class="nav__dropdown-link" role="menuitem">Leadership Team</a>
+                    </div>
+                </div>
+                <div class="nav__item nav__item--dropdown">
+                    <a href="platform.html" class="nav__link">Platform</a>
+                    <button class="nav__dropdown-toggle" aria-label="Expand Platform menu"><svg class="nav__chevron"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg></button>
+                    <div class="nav__dropdown" role="menu">
+                        <a href="platform.html" class="nav__dropdown-link" role="menuitem">Investment Structures</a>
+                        <a href="platform.html#private-equity" class="nav__dropdown-link" role="menuitem">Private
+                            Equity</a>
+                        <a href="platform.html#debt" class="nav__dropdown-link" role="menuitem">Debt</a>
+                        <a href="platform.html#project-based" class="nav__dropdown-link"
+                            role="menuitem">Project-Based</a>
+                        <a href="platform.html#onboarding" class="nav__dropdown-link" role="menuitem">Investor
+                            Onboarding</a>
+                    </div>
+                </div>
+                <div class="nav__item nav__item--dropdown">
+                    <a href="investor-protection.html" class="nav__link">Investor Protection</a>
+                    <button class="nav__dropdown-toggle" aria-label="Expand Investor Protection menu"><svg
+                            class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg></button>
+                    <div class="nav__dropdown" role="menu">
+                        <a href="investor-protection.html" class="nav__dropdown-link" role="menuitem">Overview</a>
+                        <a href="risk.html" class="nav__dropdown-link" role="menuitem">Risk</a>
+                    </div>
+                </div>
+                <div class="nav__item nav__item--dropdown">
+                    <a href="markets.html" class="nav__link">Markets</a>
+                    <button class="nav__dropdown-toggle" aria-label="Expand Markets menu"><svg class="nav__chevron"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg></button>
+                    <div class="nav__dropdown" role="menu">
+                        <a href="markets.html#primary" class="nav__dropdown-link" role="menuitem">Primary Market</a>
+                        <a href="markets.html#secondary" class="nav__dropdown-link" role="menuitem">Secondary Market</a>
+                        <a href="markets.html#flow" class="nav__dropdown-link" role="menuitem">Market Flow</a>
+                        <a href="ecosystem.html" class="nav__dropdown-link" role="menuitem">Ecosystem</a>
+                    </div>
+                </div>
+                <a href="index.html#register" class="btn btn--gold btn--sm nav__mobile-cta">Register Interest</a>
+            </div>
+            <div class="nav__actions">
+                <a href="index.html#register" class="btn btn--primary btn--sm">Register Interest</a>
+            </div>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="container">
+            <div class="page-hero__content">
+                <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="page-hero__breadcrumb-sep">›</span>
+                    <span>About Us</span>
+                </nav>
+                <div class="page-hero__label">About Crowdaxe</div>
+                <h1 class="page-hero__title">Company, Market &amp; Leadership</h1>
+                <p class="page-hero__subtitle">Learn about Crowdaxe Capital, the capital market gap we address in
+                    Zimbabwe, and the executive team behind the platform.</p>
+            </div>
+        </div>
+    </header>
+
+    <section style="padding: var(--space-16) 0; background: var(--bg-primary);">
+        <div class="container">
+            <div class="tabs" data-tabs id="aboutTabs">
+                <div class="tabs__nav" role="tablist">
+                    <button class="tab__btn active" role="tab" aria-selected="true" data-tab="overview">Company
+                        Overview</button>
+                    <button class="tab__btn" role="tab" aria-selected="false" data-tab="market">Market Context</button>
+                    <button class="tab__btn" role="tab" aria-selected="false" data-tab="leadership">Leadership
+                        Team</button>
+                </div>
+                <div class="tab__panel active" id="overview" role="tabpanel">
+                    <div class="market__grid reveal">
+                        <div>
+                            <span class="section-label">Who We Are</span>
+                            <h2 class="section-title">Zimbabwe's First SECZ-Approved Crowdfunding Platform</h2>
+                            <p class="section-subtitle">Crowdaxe Capital (Private) Limited is a technology-enabled,
+                                regulated marketplace designed to bridge Zimbabwe's structural private capital gap. We
+                                connect growth-stage businesses with a broad base of sophisticated investors through
+                                three standardised investment structures.</p>
+                            <p
+                                style="font-size:0.9rem; color:var(--text-tertiary); line-height:1.8; margin-top:var(--space-6);">
+                                Approved for sandbox testing by the Securities and Exchange Commission of Zimbabwe
+                                (SECZ), Crowdaxe operates under full regulatory oversight with mandatory KYC/AML
+                                compliance, a segregated Investor Protection Fund, and standardised fundraising terms
+                                across all structures.</p>
+                            <div
+                                style="margin-top:var(--space-10); display:grid; grid-template-columns:1fr 1fr; gap:var(--space-4);">
+                                <div class="market__stat-card">
+                                    <div class="market__stat-value">1st</div>
+                                    <div class="market__stat-label">SECZ sandbox-approved crowdfunding platform in
+                                        Zimbabwe</div>
+                                </div>
+                                <div class="market__stat-card market__stat-card--accent">
+                                    <div class="market__stat-value">3</div>
+                                    <div class="market__stat-label">Regulated investment structures — PE, Debt,
+                                        Project-Based</div>
+                                </div>
+                                <div class="market__stat-card">
+                                    <div class="market__stat-value">USD 100</div>
+                                    <div class="market__stat-label">Minimum investment entry for all structures</div>
+                                </div>
+                                <div class="market__stat-card market__stat-card--accent">
+                                    <div class="market__stat-value">90 days</div>
+                                    <div class="market__stat-label">Maximum fundraising cycle per campaign</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="market__visual">
+                            <div class="market__image-wrapper">
+                                <img src="images/market-context.jpg" alt="Zimbabwe business landscape"
+                                    class="market__image" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__panel" id="market" role="tabpanel">
+                    <div class="market__grid reveal">
+                        <div>
+                            <span class="section-label">Market Context</span>
+                            <h2 class="section-title">Zimbabwe's Private Capital Gap</h2>
+                            <p class="section-subtitle">Zimbabwe's capital markets are characterised by limited access
+                                to formal financing for SMEs and growth-stage projects. Crowdaxe addresses this
+                                structural gap through a technology-enabled, regulated marketplace that reduces
+                                transaction costs and broadens investor access.</p>
+                            <div class="market__sectors">
+                                <div class="market__sector"><svg class="market__sector-icon" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                                        <polyline points="9 22 9 12 15 12 15 22" />
+                                    </svg>Food &amp; Agriculture</div>
+                                <div class="market__sector"><svg class="market__sector-icon" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <circle cx="12" cy="12" r="3" />
+                                        <path
+                                            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                                    </svg>Renewable Energy</div>
+                                <div class="market__sector"><svg class="market__sector-icon" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M2 20h20M5 20V10l7-7 7 7v10" />
+                                        <path d="M9 20v-6h6v6" />
+                                    </svg>Infrastructure</div>
+                                <div class="market__sector"><svg class="market__sector-icon" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg>Healthcare</div>
+                                <div class="market__sector"><svg class="market__sector-icon" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                                        <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
+                                    </svg>Mining</div>
+                                <div class="market__sector"><svg class="market__sector-icon" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
+                                        <path d="M1 10h22" />
+                                    </svg>Fintech</div>
+                                <div class="market__sector"><svg class="market__sector-icon" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                                        <polyline points="14 2 14 8 20 8" />
+                                    </svg>Manufacturing</div>
+                                <div class="market__sector"><svg class="market__sector-icon" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="1.5">
+                                        <rect x="1" y="3" width="15" height="13" />
+                                        <polygon points="23 7 16 12 16 2 23 7" />
+                                    </svg>Transport &amp; Logistics</div>
+                            </div>
+                        </div>
+                        <div class="market__visual">
+                            <div class="market__image-wrapper"><img src="images/market-context.jpg"
+                                    alt="Zimbabwe commercial buildings" class="market__image" loading="lazy"></div>
+                            <div class="market__stat-card">
+                                <div class="market__stat-value">3</div>
+                                <div class="market__stat-label">Regulated investment structures — Private Equity, Debt,
+                                    and Project-based</div>
+                            </div>
+                            <div class="market__stat-card market__stat-card--accent">
+                                <div class="market__stat-value">1st</div>
+                                <div class="market__stat-label">SECZ sandbox-approved crowdfunding platform in Zimbabwe
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab__panel" id="leadership" role="tabpanel">
+                    <div class="reveal">
+                        <span class="section-label">Leadership</span>
+                        <h2 class="section-title">Executive Team</h2>
+                        <p class="section-subtitle">Experienced professionals with backgrounds in governance, law,
+                            technology, and financial services.</p>
+                    </div>
+                    <div class="leadership__grid">
+                        <div class="leadership__card reveal reveal-delay-1">
+                            <div class="leadership__card-photo"><img src="images/leadership-01.jpg"
+                                    alt="Kingston Gamuchirai Leon Kamba" class="leadership__card-img" loading="lazy">
+                                <div class="leadership__card-overlay"><span class="leadership__card-initials">KK</span>
+                                </div>
+                            </div>
+                            <div class="leadership__card-body">
+                                <h4 class="leadership__card-name">Kingston Gamuchirai Leon Kamba</h4>
+                                <p class="leadership__card-role">Chairman &amp; CEO</p>
+                                <p class="leadership__card-bio">MSc Integrated Governance, University of Westminster
+                                    (UK). Strategic leadership in governance, regulatory compliance, and capital markets
+                                    development across public and private sectors.</p>
+                            </div>
+                        </div>
+                        <div class="leadership__card reveal reveal-delay-2">
+                            <div class="leadership__card-photo"><img src="images/leadership-02.jpg"
+                                    alt="Tafadzwa Ralph Mugabe" class="leadership__card-img" loading="lazy">
+                                <div class="leadership__card-overlay"><span class="leadership__card-initials">TM</span>
+                                </div>
+                            </div>
+                            <div class="leadership__card-body">
+                                <h4 class="leadership__card-name">Tafadzwa Ralph Mugabe</h4>
+                                <p class="leadership__card-role">Head of Legal &amp; Compliance</p>
+                                <p class="leadership__card-bio">LL.M (International Human Rights Law) cum laude. Over
+                                    fifteen years of legal and compliance experience across local, regional, and
+                                    international regulatory frameworks.</p>
+                            </div>
+                        </div>
+                        <div class="leadership__card reveal reveal-delay-3">
+                            <div class="leadership__card-photo"><img src="images/leadership-03.jpg"
+                                    alt="Tinotenda Chirume" class="leadership__card-img" loading="lazy">
+                                <div class="leadership__card-overlay"><span class="leadership__card-initials">TC</span>
+                                </div>
+                            </div>
+                            <div class="leadership__card-body">
+                                <h4 class="leadership__card-name">Tinotenda Chirume</h4>
+                                <p class="leadership__card-role">Chief Technology Officer</p>
+                                <p class="leadership__card-bio">BSc (Hons) Information Technology, Chinhoyi University
+                                    of Technology. Leads platform architecture, security infrastructure, and technology
+                                    operations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__risk-warning">
+                <p><strong>Capital at Risk.</strong> Investing in unlisted securities involves risks including
+                    illiquidity and potential total loss of capital. Seek independent advice where appropriate.</p>
+            </div>
+            <div class="footer__grid">
+                <div>
+                    <div class="footer__brand"><img src="images/logo.png" alt="Crowdaxe" class="footer__logo-img"><span
+                            class="footer__badge">SECZ Sandbox</span></div>
+                    <p class="footer__brand-text">Crowdaxe Capital (Private) Limited<br>Zimbabwe's first SECZ
+                        sandbox-approved crowdfunding platform.</p>
+                    <p class="footer__regulatory-note">Approved for sandbox testing by the Securities and Exchange
+                        Commission of Zimbabwe.</p>
+                </div>
+                <div>
+                    <h4 class="footer__heading">About</h4>
+                    <a href="about.html" class="footer__link">Company Overview</a>
+                    <a href="about.html#market" class="footer__link">Market Context</a>
+                    <a href="about.html#leadership" class="footer__link">Leadership Team</a>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Platform</h4>
+                    <a href="platform.html" class="footer__link">Investment Structures</a>
+                    <a href="investor-protection.html" class="footer__link">Investor Protection</a>
+                    <a href="markets.html" class="footer__link">Markets</a>
+                    <a href="ecosystem.html" class="footer__link">Ecosystem</a>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Legal</h4>
+                    <a href="risk.html" class="footer__link">Risk Disclosure</a>
+                    <a href="resources/Crowdaxe - Rules &amp; Terms of Use 30.01.2026.pdf" class="footer__link"
+                        download>Terms &amp; Conditions</a>
+                    <a href="resources/Crowdaxe - Privacy Policy 30012026.pdf" class="footer__link" download>Privacy
+                        Policy</a>
+                    <a href="resources/Crowdaxe - Investor Terms 30012026.pdf" class="footer__link" download>Investor
+                        Terms</a>
+                    <a href="resources/IPS Rulebook.pdf" class="footer__link" download>IPS Framework</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Crowdaxe Capital (Private) Limited. All rights reserved.</span>
+                <div class="footer__legal-links">
+                    <a href="#" class="footer__link">Terms</a>
+                    <a href="#" class="footer__link">Privacy</a>
+                    <a href="risk.html" class="footer__link">Risk</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

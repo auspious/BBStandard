@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Crowdaxe Capital markets — Primary market for new investment placements and secondary market for structured position transfer.">
+    <title>Markets — Crowdaxe Capital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+        <div class="nav__inner">
+            <div class="nav__brand">
+                <a href="index.html" class="nav__logo">
+                    <img src="images/logo.png" alt="Crowdaxe" class="nav__logo-img"
+                        onerror="this.style.display='none';this.nextElementSibling.style.display='inline'">
+                    <span class="nav__logo-text" style="display:none">CROWDAXE</span>
+                </a>
+                <span class="nav__badge">SECZ Sandbox</span>
+            </div>
+            <div class="nav__links" id="navLinks">
+                <div class="nav__item"><a href="index.html" class="nav__link">Home</a></div>
+                <div class="nav__item nav__item--dropdown">
+                    <a href="about.html" class="nav__link">About Us</a>
+                    <button class="nav__dropdown-toggle" aria-label="Expand About Us menu">
+                        <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="nav__dropdown" role="menu">
+                        <a href="about.html" class="nav__dropdown-link" role="menuitem">Company Overview</a>
+                        <a href="about.html#market" class="nav__dropdown-link" role="menuitem">Market Context</a>
+                        <a href="about.html#leadership" class="nav__dropdown-link" role="menuitem">Leadership Team</a>
+                    </div>
+                </div>
+                <div class="nav__item nav__item--dropdown">
+                    <a href="platform.html" class="nav__link">Platform</a>
+                    <button class="nav__dropdown-toggle" aria-label="Expand Platform menu">
+                        <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="nav__dropdown" role="menu">
+                        <a href="platform.html" class="nav__dropdown-link" role="menuitem">Investment Structures</a>
+                        <a href="platform.html#private-equity" class="nav__dropdown-link" role="menuitem">Private
+                            Equity</a>
+                        <a href="platform.html#debt" class="nav__dropdown-link" role="menuitem">Debt</a>
+                        <a href="platform.html#project-based" class="nav__dropdown-link"
+                            role="menuitem">Project-Based</a>
+                        <a href="platform.html#onboarding" class="nav__dropdown-link" role="menuitem">Investor
+                            Onboarding</a>
+                    </div>
+                </div>
+                <div class="nav__item nav__item--dropdown">
+                    <a href="investor-protection.html" class="nav__link">Investor Protection</a>
+                    <button class="nav__dropdown-toggle" aria-label="Expand Investor Protection menu">
+                        <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="nav__dropdown" role="menu">
+                        <a href="investor-protection.html" class="nav__dropdown-link" role="menuitem">Overview</a>
+                        <a href="risk.html" class="nav__dropdown-link" role="menuitem">Risk</a>
+                    </div>
+                </div>
+                <div class="nav__item nav__item--dropdown">
+                    <a href="markets.html" class="nav__link">Markets</a>
+                    <button class="nav__dropdown-toggle" aria-label="Expand Markets menu">
+                        <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="nav__dropdown" role="menu">
+                        <a href="markets.html#primary" class="nav__dropdown-link" role="menuitem">Primary Market</a>
+                        <a href="markets.html#secondary" class="nav__dropdown-link" role="menuitem">Secondary Market</a>
+                        <a href="markets.html#flow" class="nav__dropdown-link" role="menuitem">Market Flow</a>
+                        <a href="ecosystem.html" class="nav__dropdown-link" role="menuitem">Ecosystem</a>
+                    </div>
+                </div>
+                <a href="index.html#register" class="btn btn--gold btn--sm nav__mobile-cta">Register Interest</a>
+            </div>
+            <div class="nav__actions">
+                <a href="index.html#register" class="btn btn--primary btn--sm">Register Interest</a>
+            </div>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="container">
+            <div class="page-hero__content">
+                <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span class="page-hero__breadcrumb-sep">›</span>
+                    <span>Markets</span>
+                </nav>
+                <div class="page-hero__label">Platform Markets</div>
+                <h1 class="page-hero__title">Primary &amp; Secondary Market Structure</h1>
+                <p class="page-hero__subtitle">Crowdaxe operates two distinct marketplaces — a primary market for
+                    initial investment placement and a secondary market for liquidity through structured position
+                    transfer.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- MARKET TABS -->
+    <section style="padding:var(--space-16) 0; background:var(--bg-primary);">
+        <div class="container">
+            <div class="tabs" data-tabs id="marketTabs">
+                <div class="tabs__nav" role="tablist">
+                    <button class="tab__btn active" role="tab" data-tab="primary">Primary Market</button>
+                    <button class="tab__btn" role="tab" data-tab="secondary">Secondary Market</button>
+                </div>
+
+                <div class="tab__panel active" id="primary" role="tabpanel">
+                    <div class="market__grid reveal">
+                        <div>
+                            <span class="section-label">Primary Market</span>
+                            <h2 class="section-title">New Investment Placements</h2>
+                            <p class="section-subtitle">The primary market is where approved issuers introduce new
+                                fundraising campaigns. Investors subscribe to new positions during the defined
+                                fundraising cycle — up to 90 days.</p>
+                            <div class="info-table-wrap">
+                                <table class="info-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Participants</td>
+                                            <td>SECZ-registered issuers and onboarded investors</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mechanism</td>
+                                            <td>Subscription-based — investors commit capital during fundraising window
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Duration</td>
+                                            <td>Maximum 90-day fundraising cycle</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Minimum Investment</td>
+                                            <td>USD 100</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Available Structures</td>
+                                            <td>Private Equity, Debt, Project-Based</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Platform Fee</td>
+                                            <td>5% of total funds raised (charged to issuer)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>IPS Levy</td>
+                                            <td>1% of funds raised — transferred to Protection Fund</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div style="margin-top:var(--space-8);">
+                                <a href="index.html#register" class="btn btn--gold">Register as Investor</a>
+                            </div>
+                        </div>
+                        <div class="market__visual">
+                            <div class="market__stat-card market__stat-card--accent"
+                                style="margin-bottom:var(--space-4);">
+                                <div class="market__stat-value">90 Days</div>
+                                <div class="market__stat-label">Maximum primary market fundraising cycle per campaign
+                                </div>
+                            </div>
+                            <div class="market__stat-card">
+                                <div class="market__stat-value">USD 30K+</div>
+                                <div class="market__stat-label">Minimum target funding for a campaign to proceed to
+                                    close</div>
+                            </div>
+                            <div class="market__stat-card" style="margin-top:var(--space-4);">
+                                <div class="market__stat-value">USD 100</div>
+                                <div class="market__stat-label">Minimum subscription per investor per campaign</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab__panel" id="secondary" role="tabpanel">
+                    <div class="market__grid reveal">
+                        <div>
+                            <span class="section-label">Secondary Market</span>
+                            <h2 class="section-title">Position Transfer &amp; Liquidity</h2>
+                            <p class="section-subtitle">The secondary market allows existing investors to list and
+                                transfer their positions to qualified buyers — providing a structured liquidity pathway
+                                for investments in an otherwise illiquid asset class.</p>
+                            <div class="info-table-wrap">
+                                <table class="info-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Participants</td>
+                                            <td>Registered Crowdaxe investors (both sellers and buyers)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mechanism</td>
+                                            <td>Seller lists position; qualified buyer acquires via structured
+                                                settlement</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Available Structures</td>
+                                            <td>Private Equity, Debt, Project-Based</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Eligibility</td>
+                                            <td>Buyer must be a registered sophisticated investor</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Transfer Process</td>
+                                            <td>Platform-mediated with documented settlement</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pricing</td>
+                                            <td>Negotiated between parties within platform framework</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div style="margin-top:var(--space-8);">
+                                <a href="index.html#register" class="btn btn--gold">Register to Access Secondary
+                                    Market</a>
+                            </div>
+                        </div>
+                        <div class="market__visual">
+                            <div class="market__stat-card market__stat-card--accent"
+                                style="margin-bottom:var(--space-4);">
+                                <div class="market__stat-value">Structured</div>
+                                <div class="market__stat-label">All secondary transfers are platform-mediated with
+                                    formal settlement documentation.</div>
+                            </div>
+                            <div class="market__stat-card">
+                                <div class="market__stat-value">Qualified Only</div>
+                                <div class="market__stat-label">Secondary market participation is restricted to
+                                    registered sophisticated investors.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARKET FLOW -->
+    <section class="markets section--alt" id="flow">
+        <div class="container">
+            <div class="reveal">
+                <span class="section-label">Market Flow</span>
+                <h2 class="section-title">End-to-End Market Process</h2>
+                <p class="section-subtitle">From issuer application through to secondary market position transfer — the
+                    complete investment lifecycle.</p>
+            </div>
+            <div class="markets__flow reveal reveal-delay-1">
+                <div class="markets__flow-item">
+                    <div class="markets__flow-number">01</div>
+                    <h4 class="markets__flow-title">Issuer Application</h4>
+                    <p class="markets__flow-text">SECZ-registered issuers apply to raise capital through the platform
+                        with mandatory documentation and due diligence review.</p>
+                </div>
+                <div class="markets__flow-connector" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </div>
+                <div class="markets__flow-item">
+                    <div class="markets__flow-number">02</div>
+                    <h4 class="markets__flow-title">Primary Market</h4>
+                    <p class="markets__flow-text">Approved issuers are introduced to the marketplace. Investors
+                        subscribe to new positions during the fundraising cycle.</p>
+                </div>
+                <div class="markets__flow-connector" aria-hidden="true">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </div>
+                <div class="markets__flow-item">
+                    <div class="markets__flow-number">03</div>
+                    <h4 class="markets__flow-title">Secondary Market</h4>
+                    <p class="markets__flow-text">Existing investors may list positions for transfer. Qualified
+                        investors can acquire existing positions through structured settlement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__risk-warning">
+                <p><strong>Capital at Risk.</strong> Investing in unlisted securities involves risks including
+                    illiquidity and potential total loss of capital. Seek independent advice where appropriate.</p>
+            </div>
+            <div class="footer__grid">
+                <div>
+                    <div class="footer__brand">
+                        <img src="images/logo.png" alt="Crowdaxe" class="footer__logo-img">
+                        <span class="footer__badge">SECZ Sandbox</span>
+                    </div>
+                    <p class="footer__brand-text">Crowdaxe Capital (Private) Limited<br>Zimbabwe's first SECZ
+                        sandbox-approved crowdfunding platform.</p>
+                </div>
+                <div>
+                    <h4 class="footer__heading">About</h4>
+                    <a href="about.html" class="footer__link">Company Overview</a>
+                    <a href="about.html#market" class="footer__link">Market Context</a>
+                    <a href="about.html#leadership" class="footer__link">Leadership Team</a>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Platform</h4>
+                    <a href="platform.html" class="footer__link">Investment Structures</a>
+                    <a href="investor-protection.html" class="footer__link">Investor Protection</a>
+                    <a href="markets.html" class="footer__link">Markets</a>
+                    <a href="ecosystem.html" class="footer__link">Ecosystem</a>
+                </div>
+                <div>
+                    <h4 class="footer__heading">Legal</h4>
+                    <a href="risk.html" class="footer__link">Risk Disclosure</a>
+                    <a href="resources/Crowdaxe - Rules &amp; Terms of Use 30.01.2026.pdf" class="footer__link"
+                        download>Terms &amp; Conditions</a>
+                    <a href="resources/Crowdaxe - Privacy Policy 30012026.pdf" class="footer__link" download>Privacy
+                        Policy</a>
+                    <a href="resources/Crowdaxe - Investor Terms 30012026.pdf" class="footer__link" download>Investor
+                        Terms</a>
+                    <a href="resources/IPS Rulebook.pdf" class="footer__link" download>IPS Framework</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span>&copy; 2026 Crowdaxe Capital (Private) Limited. All rights reserved.</span>
+                <div class="footer__legal-links">
+                    <a href="#" class="footer__link">Terms</a>
+                    <a href="#" class="footer__link">Privacy</a>
+                    <a href="risk.html" class="footer__link">Risk</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
