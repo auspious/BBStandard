@@ -457,7 +457,8 @@ section {
 .hero {
     min-height: 100svh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     background: var(--slate-900);
     overflow: hidden;
@@ -505,6 +506,15 @@ section {
     z-index: 3;
     max-width: 720px;
     padding: var(--space-16) 0;
+}
+
+/* Hero container grows to fill space above trust bar, keeping content centred */
+.hero>.container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 3;
 }
 
 .hero__regulatory {
@@ -602,7 +612,9 @@ section {
 .trust-bar {
     background: var(--slate-950);
     padding: var(--space-5) 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    position: relative;
+    z-index: 3;
 }
 
 .trust-bar__inner {
@@ -1585,7 +1597,7 @@ section {
 
     /* ---- HERO MOBILE ---- */
     .hero {
-        min-height: auto;
+        min-height: 100svh;
         padding-top: var(--nav-height);
         padding-bottom: 0;
     }
@@ -1595,7 +1607,7 @@ section {
     }
 
     .hero__content {
-        padding: var(--space-10) 0 var(--space-8);
+        padding: var(--space-8) 0 var(--space-6);
     }
 
     .hero__regulatory {
