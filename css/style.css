@@ -187,7 +187,7 @@ section {
 /* --- Section Typography --- */
 .section-label {
     font-family: var(--font-body);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -215,7 +215,7 @@ section {
 
 .section-subtitle {
     font-family: var(--font-body);
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.75;
     color: var(--text-secondary);
     max-width: 680px;
@@ -381,7 +381,7 @@ section {
 }
 
 .nav__link {
-    font-size: 0.82rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: var(--text-secondary);
     letter-spacing: 0.01em;
@@ -545,7 +545,7 @@ section {
 }
 
 .hero__regulatory-text {
-    font-size: 0.72rem;
+    font-size: 0.82rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -569,7 +569,7 @@ section {
 }
 
 .hero__description {
-    font-size: 1rem;
+    font-size: 1.15rem;
     line-height: 1.8;
     color: var(--surface-400);
     margin-bottom: var(--space-10);
@@ -629,7 +629,7 @@ section {
     display: flex;
     align-items: center;
     gap: var(--space-2);
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     color: var(--surface-400);
     font-weight: 500;
 }
@@ -639,8 +639,8 @@ section {
 }
 
 .trust-bar__icon {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     color: var(--accent-400);
     flex-shrink: 0;
 }
@@ -1022,12 +1022,12 @@ section {
 .onboarding__step-title {
     font-family: var(--font-body);
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 1.05rem;
     margin-bottom: var(--space-2);
 }
 
 .onboarding__step-desc {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--text-tertiary);
     line-height: 1.6;
 }
@@ -1185,11 +1185,26 @@ section {
     opacity: 1;
 }
 
-.leadership__card-initials {
-    font-family: var(--font-heading);
-    font-size: 2rem;
-    color: var(--accent-300);
-    opacity: 0.5;
+.leadership__social-link {
+    width: 36px;
+    height: 36px;
+    background: var(--accent-500);
+    color: var(--slate-900);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--duration-fast);
+    transform: translateY(10px);
+}
+
+.leadership__card:hover .leadership__social-link {
+    transform: translateY(0);
+}
+
+.leadership__social-link:hover {
+    background: var(--accent-300);
+    transform: scale(1.1) !important;
 }
 
 .leadership__card-body {
@@ -1300,7 +1315,7 @@ section {
 }
 
 .cta-final__text {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     color: var(--surface-400);
     line-height: 1.75;
     margin-bottom: var(--space-10);
@@ -1385,14 +1400,14 @@ section {
 }
 
 .footer__brand-text {
-    font-size: 0.82rem;
+    font-size: 0.95rem;
     line-height: 1.7;
     color: var(--surface-300);
     max-width: 300px;
 }
 
 .footer__regulatory-note {
-    font-size: 0.73rem;
+    font-size: 0.82rem;
     color: var(--surface-400);
     margin-top: var(--space-4);
     line-height: 1.6;
@@ -1401,7 +1416,7 @@ section {
 .footer__heading {
     font-family: var(--font-body);
     font-weight: 600;
-    font-size: 0.73rem;
+    font-size: 0.85rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--text-inverse-secondary);
@@ -1410,7 +1425,7 @@ section {
 
 .footer__link {
     display: block;
-    font-size: 0.82rem;
+    font-size: 0.9rem;
     color: var(--surface-400);
     padding: var(--space-1) 0;
     transition: color var(--duration-fast);
@@ -1615,7 +1630,7 @@ section {
     }
 
     .hero__regulatory-text {
-        font-size: 0.65rem;
+        font-size: 0.75rem;
         letter-spacing: 0.08em;
     }
 
@@ -1630,7 +1645,7 @@ section {
     }
 
     .hero__description {
-        font-size: 0.88rem;
+        font-size: 1rem;
         line-height: 1.7;
         margin-bottom: var(--space-8);
     }
@@ -1681,7 +1696,7 @@ section {
     .trust-bar__item {
         position: absolute;
         white-space: nowrap;
-        font-size: 0.75rem;
+        font-size: 0.85rem;
         opacity: 0;
         animation: trustFade 12s infinite;
     }
@@ -1738,7 +1753,7 @@ section {
     }
 
     .risk-notice p {
-        font-size: 0.68rem;
+        font-size: 0.75rem;
         line-height: 1.5;
     }
 
@@ -1753,11 +1768,11 @@ section {
     }
 
     .section-subtitle {
-        font-size: 0.88rem;
+        font-size: 0.95rem;
     }
 
     .section-label {
-        font-size: 0.65rem;
+        font-size: 0.75rem;
     }
 
     /* Market sectors */
@@ -2100,7 +2115,7 @@ section {
 .nav__dropdown-link {
     display: block;
     padding: var(--space-3) var(--space-5);
-    font-size: 0.82rem;
+    font-size: 0.88rem;
     font-weight: 500;
     color: var(--text-secondary);
     transition: all var(--duration-fast);
@@ -2366,7 +2381,7 @@ section {
 }
 
 .overview-card__text {
-    font-size: 0.82rem;
+    font-size: 0.95rem;
     color: var(--text-tertiary);
     line-height: 1.65;
 }
