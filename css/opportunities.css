@@ -206,4 +206,28 @@
     .opportunities__grid {
         grid-template-columns: 1fr;
     }
+
+    .opportunity-card__title {
+        font-size: 1.4rem;
+    }
+
+    .opportunity-card__desc {
+        font-size: 0.95rem;
+    }
+
+    .opportunity-card__progress-val {
+        font-size: 1.25rem;
+    }
+
+    .opportunity-card__progress-label {
+        font-size: 0.75rem;
+    }
+
+    .opportunity-card__metric-label {
+        font-size: 0.7rem;
+    }
+
+    .opportunity-card__metric-value {
+        font-size: 1rem;
+    }
 }
