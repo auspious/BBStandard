@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/opportunities.css">
+    <link rel="stylesheet" href="css/video-modal.css">
 </head>
 
 <body>
@@ -141,7 +143,8 @@
                         infrastructure for issuer fundraising and investor participation. All platform tools and
                         analytics are available to registered issuers.</p>
                 </div>
-                <div class="xpetts__card reveal reveal-delay-2">
+                <div class="xpetts__card reveal reveal-delay-2 xpetts__card--interactive" id="xpettsTalkCard">
+                    <span class="xpetts__card-badge">WATCH NOW</span>
                     <div class="xpetts__card-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="1.5">
@@ -170,6 +173,115 @@
                     <p class="xpetts__card-text">Structured networking connecting issuers, investors, and industry
                         specialists. Invitation-based events for qualified participants, designed to accelerate
                         relationships and market visibility.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE OPPORTUNITIES -->
+    <section class="opportunities" id="live-opportunities">
+        <div class="container">
+            <div class="reveal">
+                <span class="section-label">Active Market</span>
+                <h2 class="section-title">Live Investment Opportunities</h2>
+                <p class="section-subtitle">Discover structured investment opportunities currently open for
+                    subscription.
+                    All offerings are regulated and hosted within the SECZ Sandbox framework.</p>
+            </div>
+
+            <div class="opportunities__grid" id="opportunitiesContainer">
+                <!-- Skeleton Loading State (Visible by default, removed when data loads) -->
+                <div class="opportunity-card opportunity-card--skeleton">
+                    <div class="opportunity-card__image-wrap skeleton-box"></div>
+                    <div class="opportunity-card__body">
+                        <div class="skeleton-box" style="height: 24px; width: 80%; margin-bottom: 8px;"></div>
+                        <div class="skeleton-box" style="height: 14px; width: 40%; margin-bottom: 16px;"></div>
+                        <div class="skeleton-box" style="height: 60px; width: 100%; margin-bottom: 24px;"></div>
+                        <div class="skeleton-box" style="height: 40px; width: 100%; margin-bottom: 12px;"></div>
+                        <div class="opportunity-card__metrics">
+                            <div class="skeleton-box" style="height: 30px; width: 100%;"></div>
+                            <div class="skeleton-box" style="height: 30px; width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Placeholder 1 -->
+                <div class="opportunity-card reveal">
+                    <div class="opportunity-card__badge">Private Equity</div>
+                    <div class="opportunity-card__image-wrap">
+                        <img src="images/market-context.jpg" alt="Commercial Agriculture Expansion"
+                            class="opportunity-card__img">
+                    </div>
+                    <div class="opportunity-card__body">
+                        <h3 class="opportunity-card__title">Agri-Hub Export Expansion</h3>
+                        <div class="opportunity-card__issuer">ZimAgro Holdings Ltd</div>
+                        <p class="opportunity-card__desc">Funding for the acquisition of cold-chain logistics and
+                            advanced irrigation systems for high-value horticultural exports.</p>
+
+                        <div class="opportunity-card__progress-wrap">
+                            <div class="opportunity-card__progress-header">
+                                <span class="opportunity-card__progress-val">65%</span>
+                                <span class="opportunity-card__progress-label">Raised of $500,000</span>
+                            </div>
+                            <div class="opportunity-card__bar-bg">
+                                <div class="opportunity-card__bar-fill" style="width: 65%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="opportunity-card__metrics">
+                            <div class="opportunity-card__metric">
+                                <div class="opportunity-card__metric-label">Min. Investment</div>
+                                <div class="opportunity-card__metric-value">$500</div>
+                            </div>
+                            <div class="opportunity-card__metric">
+                                <div class="opportunity-card__metric-label">Structure</div>
+                                <div class="opportunity-card__metric-value">Equity (Series A)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opportunity-card__footer">
+                        <a href="https://investors.crowdaxe.com/?redirect=/investor/profile/documents"
+                            class="btn btn--gold opportunity-card__btn">View details</a>
+                    </div>
+                </div>
+
+                <!-- Featured Placeholder 2 -->
+                <div class="opportunity-card reveal reveal-delay-2">
+                    <div class="opportunity-card__badge">Project-Based</div>
+                    <div class="opportunity-card__image-wrap">
+                        <img src="images/hero-bg.jpg" alt="Solar Infrastructure Project" class="opportunity-card__img">
+                    </div>
+                    <div class="opportunity-card__body">
+                        <h3 class="opportunity-card__title">SunStrike Solar Farm (Phase II)</h3>
+                        <div class="opportunity-card__issuer">Energy Capital Partners</div>
+                        <p class="opportunity-card__desc">Structured debt issuance for the construction of 5MW solar
+                            capacity serving independent industrial clusters.</p>
+
+                        <div class="opportunity-card__progress-wrap">
+                            <div class="opportunity-card__progress-header">
+                                <span class="opportunity-card__progress-val">22%</span>
+                                <span class="opportunity-card__progress-label">Raised of $1,200,000</span>
+                            </div>
+                            <div class="opportunity-card__bar-bg">
+                                <div class="opportunity-card__bar-fill" style="width: 22%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="opportunity-card__metrics">
+                            <div class="opportunity-card__metric">
+                                <div class="opportunity-card__metric-label">Min. Investment</div>
+                                <div class="opportunity-card__metric-value">$1,000</div>
+                            </div>
+                            <div class="opportunity-card__metric">
+                                <div class="opportunity-card__metric-label">Expected Yield</div>
+                                <div class="opportunity-card__metric-value">12% Fixed</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opportunity-card__footer">
+                        <a href="https://investors.crowdaxe.com/?redirect=/investor/profile/documents"
+                            class="btn btn--gold opportunity-card__btn">View details</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -235,7 +347,7 @@
                         Policy</a>
                     <a href="resources/Crowdaxe - Investor Terms 30012026.pdf" class="footer__link" download>Investor
                         Terms</a>
-                    <a href="resources/IPS Rulebook.pdf" class="footer__link" download>IPS Framework</a>
+                    <a href="resources/IPS Rulebook 2026.pdf" class="footer__link" download>IPS Framework</a>
                 </div>
             </div>
             <div class="footer__bottom">
@@ -250,6 +362,26 @@
     </footer>
 
     <script src="js/main.js"></script>
+
+    <!-- VIDEO MODAL -->
+    <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="videoModalTitle">
+        <div class="video-modal__overlay" id="videoModalOverlay"></div>
+        <div class="video-modal__container">
+            <div class="video-modal__header">
+                <h3 class="video-modal__title" id="videoModalTitle">Loading latest video...</h3>
+            </div>
+            <div class="video-modal__body">
+                <iframe id="youtubePlayer" class="video-modal__iframe" allow="autoplay; encrypted-media"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div class="video-modal__footer">
+                <button class="btn btn--outline-light" id="closeVideoModal">Cancel</button>
+                <a href="https://www.youtube.com/@XpettsTalk" class="btn btn--gold" target="_blank"
+                    id="visitChannel">Visit Channel</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

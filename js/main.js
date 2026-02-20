@@ -13,6 +13,8 @@
         initScrollReveal();
         initSmoothScroll();
         initActiveNavLink();
+        initLiveOpportunities();
+        initVideoModal();
     }
 
     // ─── Navigation scroll + mobile toggle ───────────────────────
@@ -254,6 +256,72 @@
                     var parentLink = parentItem.querySelector(':scope > .nav__link');
                     if (parentLink) parentLink.classList.add('active');
                 }
+            }
+        });
+    }
+
+    function initLiveOpportunities() {
+        const container = document.getElementById('opportunitiesContainer');
+        if (!container) return;
+
+        // Note: API integration will be implemented here once API keys are provided.
+        // For now, we display the high-fidelity placeholders already in the HTML.
+    }
+
+    function initVideoModal() {
+        const modal = document.getElementById('videoModal');
+        const trigger = document.getElementById('xpettsTalkCard');
+        const closeBtn = document.getElementById('closeVideoModal');
+        const overlay = document.getElementById('videoModalOverlay');
+        const iframe = document.getElementById('youtubePlayer');
+        const titleEl = document.getElementById('videoModalTitle');
+
+        if (!modal || !trigger) return;
+
+        // Configuration
+        const channelId = "YOUR_CHANNEL_ID_HERE"; // User to provide later
+        const rssUrl = encodeURIComponent(`https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`);
+        const apiEndpoint = `https://api.rss2json.com/v1/api.json?rss_url=${rssUrl}`;
+
+        async function fetchLatestVideo() {
+            try {
+                const response = await fetch(apiEndpoint);
+                const data = await response.json();
+
+                if (data.items && data.items.length > 0) {
+                    const latestVideo = data.items[0];
+                    const videoId = latestVideo.link.split('v=')[1].split('&')[0];
+
+                    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+                    titleEl.innerText = latestVideo.title;
+                }
+            } catch (error) {
+                console.error("Error loading YouTube video:", error);
+                titleEl.innerText = "Xpetts Talk — Latest Video";
+                iframe.src = "https://www.youtube.com/embed?listType=user_uploads&list=XpettsTalk";
+            }
+        }
+
+        function openModal() {
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            fetchLatestVideo();
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+            iframe.src = ''; // Stop video
+        }
+
+        trigger.addEventListener('click', openModal);
+        closeBtn.addEventListener('click', closeModal);
+        overlay.addEventListener('click', closeModal);
+
+        // Escape key to close
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
             }
         });
     }

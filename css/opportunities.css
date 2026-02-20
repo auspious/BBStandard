@@ -1,0 +1,209 @@
+/* ============================================
+   LIVE OPPORTUNITIES
+   ============================================ */
+.opportunities {
+    background: var(--bg-secondary);
+    padding: var(--space-24) 0;
+}
+
+.opportunities__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-8);
+    margin-top: var(--space-12);
+}
+
+.opportunity-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: all var(--duration-normal) var(--ease-out);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: default;
+}
+
+.opportunity-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-200);
+}
+
+.opportunity-card__image-wrap {
+    width: 100%;
+    height: 180px;
+    background: var(--slate-800);
+    position: relative;
+    overflow: hidden;
+}
+
+.opportunity-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+    transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.opportunity-card:hover .opportunity-card__img {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.opportunity-card__badge {
+    position: absolute;
+    top: var(--space-4);
+    left: var(--space-4);
+    background: var(--slate-900);
+    color: var(--text-inverse);
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 4px 10px;
+    border-radius: var(--radius-sm);
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.opportunity-card__body {
+    padding: var(--space-6);
+    flex: 1;
+}
+
+.opportunity-card__title {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-2);
+    color: var(--text-primary);
+}
+
+.opportunity-card__issuer {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-4);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.opportunity-card__issuer::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: var(--accent-500);
+    border-radius: 50%;
+}
+
+.opportunity-card__desc {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--space-6);
+}
+
+.opportunity-card__progress-wrap {
+    margin-bottom: var(--space-6);
+}
+
+.opportunity-card__progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: var(--space-2);
+}
+
+.opportunity-card__progress-val {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+.opportunity-card__progress-label {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.opportunity-card__bar-bg {
+    width: 100%;
+    height: 6px;
+    background: var(--bg-tertiary);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.opportunity-card__bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent-600), var(--accent-400));
+    border-radius: 10px;
+    transition: width 1s var(--ease-out);
+}
+
+.opportunity-card__metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--border-light);
+}
+
+.opportunity-card__metric-label {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 2px;
+}
+
+.opportunity-card__metric-value {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+}
+
+.opportunity-card__footer {
+    padding: var(--space-4) var(--space-6);
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-light);
+}
+
+.opportunity-card__btn {
+    width: 100%;
+    justify-content: center;
+}
+
+/* Loading Skeleton */
+.opportunity-card--skeleton {
+    pointer-events: none;
+}
+
+.skeleton-box {
+    background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .opportunities__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .opportunities__grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,183 @@
+/* ============================================
+   VIDEO MODAL
+   ============================================ */
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    display: none;
+    /* Controlled by JS */
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-6);
+    opacity: 0;
+    transition: opacity 0.4s var(--ease-out);
+}
+
+.video-modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.video-modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(9, 20, 40, 0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.video-modal__container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    background: var(--slate-900);
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transform: scale(0.95) translateY(20px);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 2;
+}
+
+.video-modal.active .video-modal__container {
+    transform: scale(1) translateY(0);
+}
+
+.video-modal__header {
+    padding: var(--space-5) var(--space-6);
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.video-modal__title {
+    color: var(--text-inverse);
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.video-modal__body {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    height: 0;
+}
+
+.video-modal__iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-modal__footer {
+    padding: var(--space-5) var(--space-6);
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-4);
+    background: rgba(255, 255, 255, 0.03);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Xpetts Talk Card Interactive State */
+.xpetts__card--interactive {
+    cursor: pointer;
+    transition: all var(--duration-normal) var(--ease-out);
+}
+
+#xpettsTalkCard {
+    position: relative;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(76, 184, 72, 0.08) 100%);
+    border: 1px solid rgba(76, 184, 72, 0.3);
+    animation: cardBounce 3s ease-in-out infinite, cardGlow 2.5s ease-in-out infinite alternate;
+}
+
+.xpetts__card-badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: var(--accent-500);
+    color: #ffffff;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+    box-shadow: 0 4px 12px rgba(76, 184, 72, 0.3);
+    z-index: 2;
+}
+
+#xpettsTalkCard:hover {
+    transform: translateY(-8px) scale(1.02);
+    background: rgba(76, 184, 72, 0.12);
+    border-color: var(--accent-500);
+    box-shadow: 0 20px 40px rgba(76, 184, 72, 0.25);
+    animation-play-state: paused;
+}
+
+@keyframes cardBounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes cardGlow {
+    from {
+        box-shadow: 0 0 5px rgba(76, 184, 72, 0.1), inset 0 0 5px rgba(76, 184, 72, 0.05);
+        border-color: rgba(76, 184, 72, 0.2);
+    }
+
+    to {
+        box-shadow: 0 0 20px rgba(76, 184, 72, 0.4), inset 0 0 10px rgba(76, 184, 72, 0.1);
+        border-color: rgba(76, 184, 72, 0.5);
+    }
+}
+
+.xpetts__card--interactive .xpetts__card-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.xpetts__card--interactive .xpetts__card-title::after {
+    content: '▶';
+    font-size: 0.7rem;
+    color: var(--accent-500);
+    opacity: 0.6;
+    transition: transform var(--duration-fast);
+}
+
+.xpetts__card--interactive:hover .xpetts__card-title::after {
+    transform: translateX(4px);
+    opacity: 1;
+}
+
+@media (max-width: 640px) {
+    .video-modal__footer {
+        flex-direction: column;
+    }
+
+    .video-modal__footer .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
