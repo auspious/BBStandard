@@ -177,7 +177,8 @@
 
 /* Loading Skeleton */
 .opportunity-card--skeleton {
-    pointer-events: none;
+    display: none;
+    /* Hide for now as we use high-fidelity placeholders */
 }
 
 .skeleton-box {

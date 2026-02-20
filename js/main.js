@@ -275,30 +275,47 @@
         const overlay = document.getElementById('videoModalOverlay');
         const iframe = document.getElementById('youtubePlayer');
         const titleEl = document.getElementById('videoModalTitle');
+        const visitChannelBtn = document.getElementById('visitChannel');
 
         if (!modal || !trigger) return;
 
         // Configuration
-        const channelId = "YOUR_CHANNEL_ID_HERE"; // User to provide later
+        const channelId = "UCiQbn2uMMpawI0qEIFSOU9Q"; // Corrected Channel ID for @XpettsTalk
         const rssUrl = encodeURIComponent(`https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`);
         const apiEndpoint = `https://api.rss2json.com/v1/api.json?rss_url=${rssUrl}`;
+        const currentOrigin = window.location.origin;
 
         async function fetchLatestVideo() {
             try {
+                // We still fetch the RSS to get the specific video title and a direct fallback link
                 const response = await fetch(apiEndpoint);
                 const data = await response.json();
 
+                // Uploads Playlist ID (Channel ID with 'UU' instead of 'UC')
+                const uploadsPlaylistId = "UUiQbn2uMMpawI0qEIFSOU9Q";
+
+                // Use the 'videoseries' approach as suggested by the user
+                // This targets the entire Uploads playlist, starting with the latest
+                iframe.src = `https://www.youtube-nocookie.com/embed/videoseries?list=${uploadsPlaylistId}&autoplay=1&mute=1`;
+
                 if (data.items && data.items.length > 0) {
                     const latestVideo = data.items[0];
-                    const videoId = latestVideo.link.split('v=')[1].split('&')[0];
-
-                    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
                     titleEl.innerText = latestVideo.title;
+
+                    // Fail-safe button: Directly links to the specific latest video
+                    if (visitChannelBtn) {
+                        visitChannelBtn.href = latestVideo.link;
+                        visitChannelBtn.innerText = "Watch on YouTube →";
+                        visitChannelBtn.classList.add('visible');
+                    }
+                } else {
+                    titleEl.innerText = "Xpetts Talk — Latest Videos";
                 }
             } catch (error) {
-                console.error("Error loading YouTube video:", error);
+                console.error("RSS Fetch Error:", error);
                 titleEl.innerText = "Xpetts Talk — Latest Video";
-                iframe.src = "https://www.youtube.com/embed?listType=user_uploads&list=XpettsTalk";
+                // Fallback to the same playlist approach even if RSS fails
+                iframe.src = `https://www.youtube-nocookie.com/embed/videoseries?list=UUiQbn2uMMpawI0qEIFSOU9Q&autoplay=1&mute=1`;
             }
         }
 
