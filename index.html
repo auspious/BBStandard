@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/opportunities.css">
 </head>
 
 <body>
@@ -34,6 +35,26 @@
                 <!-- Home -->
                 <div class="nav__item">
                     <a href="index.html" class="nav__link">Home</a>
+                </div>
+                <!-- Invest -->
+                <div class="nav__item nav__item--dropdown">
+                    <a href="#" class="nav__link">Invest</a>
+                    <button class="nav__dropdown-toggle" aria-label="Expand Invest menu">
+                        <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="nav__dropdown" role="menu">
+                        <a href="index.html#live-opportunities" class="nav__dropdown-link"
+                            role="menuitem">Opportunities</a>
+                        <div class="nav__dropdown-divider"></div>
+                        <div class="nav__dropdown-header">Markets</div>
+                        <a href="markets.html#primary" class="nav__dropdown-link" role="menuitem">Primary Market</a>
+                        <a href="markets.html#secondary" class="nav__dropdown-link" role="menuitem">Secondary Market</a>
+                        <div class="nav__dropdown-divider"></div>
+                        <a href="ecosystem.html" class="nav__dropdown-link" role="menuitem">Ecosystem</a>
+                    </div>
                 </div>
                 <!-- About Us -->
                 <div class="nav__item nav__item--dropdown">
@@ -82,22 +103,6 @@
                     <div class="nav__dropdown" role="menu">
                         <a href="investor-protection.html" class="nav__dropdown-link" role="menuitem">Overview</a>
                         <a href="risk.html" class="nav__dropdown-link" role="menuitem">Risk</a>
-                    </div>
-                </div>
-                <!-- Markets (+ Ecosystem) -->
-                <div class="nav__item nav__item--dropdown">
-                    <a href="markets.html" class="nav__link">Markets</a>
-                    <button class="nav__dropdown-toggle" aria-label="Expand Markets menu">
-                        <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2.5">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg>
-                    </button>
-                    <div class="nav__dropdown" role="menu">
-                        <a href="markets.html#primary" class="nav__dropdown-link" role="menuitem">Primary Market</a>
-                        <a href="markets.html#secondary" class="nav__dropdown-link" role="menuitem">Secondary Market</a>
-                        <a href="markets.html#flow" class="nav__dropdown-link" role="menuitem">Market Flow</a>
-                        <a href="ecosystem.html" class="nav__dropdown-link" role="menuitem">Ecosystem</a>
                     </div>
                 </div>
                 <a href="https://investors.crowdaxe.com" class="btn btn--gold btn--sm nav__mobile-cta">Register Here</a>
@@ -310,6 +315,275 @@
         </div>
     </section>
 
+    <!-- LIVE OPPORTUNITIES -->
+    <section class="opportunities" id="live-opportunities">
+        <div class="container">
+            <div class="reveal">
+                <span class="section-label">Active Market</span>
+                <h2 class="section-title">Live Investment Opportunities</h2>
+                <p class="section-subtitle">Discover structured investment opportunities currently open for
+                    subscription. Select a sector to view active placements grouped by industry.</p>
+            </div>
+
+            <div class="tabs" data-tabs id="opportunityTabs">
+                <div class="tabs__nav reveal" role="tablist">
+                    <button class="tab__btn active" role="tab" data-tab="sector-all">All Sectors</button>
+                    <button class="tab__btn" role="tab" data-tab="sector-agri">Agriculture</button>
+                    <button class="tab__btn" role="tab" data-tab="sector-infra">Infrastructure</button>
+                    <button class="tab__btn" role="tab" data-tab="sector-tech">Mining & Energy</button>
+                </div>
+
+                <!-- All Sectors Panel -->
+                <div class="tab__panel active" id="sector-all" role="tabpanel">
+                    <div class="opportunities__sectors">
+                        <!-- Agriculture Sector (All Tab) -->
+                        <div class="opportunities__sector-group reveal">
+                            <div class="opportunities__sector-header">
+                                <div class="opportunities__sector-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                                    </svg>
+                                </div>
+                                <h3 class="opportunities__sector-name">Agriculture &amp; Agribusiness</h3>
+                            </div>
+                            <div class="opportunities__grid">
+                                <div class="opportunity-card">
+                                    <div class="opportunity-card__badge">Private Equity</div>
+                                    <div class="opportunity-card__image-wrap">
+                                        <img src="images/market-context.jpg" alt="Commercial Agriculture Expansion"
+                                            class="opportunity-card__img">
+                                    </div>
+                                    <div class="opportunity-card__body">
+                                        <h3 class="opportunity-card__title">Agri-Hub Export Expansion</h3>
+                                        <div class="opportunity-card__issuer">ZimAgro Holdings Ltd</div>
+                                        <p class="opportunity-card__desc">Funding for the acquisition of cold-chain
+                                            logistics
+                                            and advanced irrigation systems for high-value horticultural exports.</p>
+                                        <div class="opportunity-card__progress-wrap">
+                                            <div class="opportunity-card__progress-header">
+                                                <span class="opportunity-card__progress-val">65%</span>
+                                                <span class="opportunity-card__progress-label">Raised of $500,000</span>
+                                            </div>
+                                            <div class="opportunity-card__bar-bg">
+                                                <div class="opportunity-card__bar-fill" style="width: 65%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="opportunity-card__metrics">
+                                            <div class="opportunity-card__metric">
+                                                <div class="opportunity-card__metric-label">Min. Entry</div>
+                                                <div class="opportunity-card__metric-value">$1,000</div>
+                                            </div>
+                                            <div class="opportunity-card__metric">
+                                                <div class="opportunity-card__metric-label">Structure</div>
+                                                <div class="opportunity-card__metric-value">Equity</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="opportunity-card__footer">
+                                        <a href="https://investors.crowdaxe.com"
+                                            class="btn btn--gold opportunity-card__btn">View details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Infrastructure & Energy Sector (All Tab) -->
+                        <div class="opportunities__sector-group reveal reveal-delay-1">
+                            <div class="opportunities__sector-header">
+                                <div class="opportunities__sector-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                                    </svg>
+                                </div>
+                                <h3 class="opportunities__sector-name">Infrastructure &amp; Energy</h3>
+                            </div>
+                            <div class="opportunities__grid">
+                                <div class="opportunity-card">
+                                    <div class="opportunity-card__badge">Project-Based</div>
+                                    <div class="opportunity-card__image-wrap">
+                                        <img src="images/hero-bg.jpg" alt="Solar Infrastructure Project"
+                                            class="opportunity-card__img">
+                                    </div>
+                                    <div class="opportunity-card__body">
+                                        <h3 class="opportunity-card__title">SunStrike Solar Farm (Phase II)</h3>
+                                        <div class="opportunity-card__issuer">Energy Capital Partners</div>
+                                        <p class="opportunity-card__desc">Structured debt issuance for the construction
+                                            of 5MW
+                                            solar capacity serving independent industrial clusters.</p>
+                                        <div class="opportunity-card__progress-wrap">
+                                            <div class="opportunity-card__progress-header">
+                                                <span class="opportunity-card__progress-val">22%</span>
+                                                <span class="opportunity-card__progress-label">Raised of
+                                                    $1,200,000</span>
+                                            </div>
+                                            <div class="opportunity-card__bar-bg">
+                                                <div class="opportunity-card__bar-fill" style="width: 22%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="opportunity-card__metrics">
+                                            <div class="opportunity-card__metric">
+                                                <div class="opportunity-card__metric-label">Min. Entry</div>
+                                                <div class="opportunity-card__metric-value">$1,000</div>
+                                            </div>
+                                            <div class="opportunity-card__metric">
+                                                <div class="opportunity-card__metric-label">Expected Yield</div>
+                                                <div class="opportunity-card__metric-value">12% Fixed</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="opportunity-card__footer">
+                                        <a href="https://investors.crowdaxe.com"
+                                            class="btn btn--gold opportunity-card__btn">View details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agriculture Only Panel -->
+                <div class="tab__panel" id="sector-agri" role="tabpanel">
+                    <div class="opportunities__sectors">
+                        <div class="opportunities__sector-group">
+                            <div class="opportunities__sector-header">
+                                <div class="opportunities__sector-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                                    </svg>
+                                </div>
+                                <h3 class="opportunities__sector-name">Agriculture &amp; Agribusiness</h3>
+                            </div>
+                            <div class="opportunities__grid">
+                                <div class="opportunity-card">
+                                    <div class="opportunity-card__badge">Private Equity</div>
+                                    <div class="opportunity-card__image-wrap">
+                                        <img src="images/market-context.jpg" alt="Commercial Agriculture Expansion"
+                                            class="opportunity-card__img">
+                                    </div>
+                                    <div class="opportunity-card__body">
+                                        <h3 class="opportunity-card__title">Agri-Hub Export Expansion</h3>
+                                        <div class="opportunity-card__issuer">ZimAgro Holdings Ltd</div>
+                                        <p class="opportunity-card__desc">Funding for the acquisition of cold-chain
+                                            logistics
+                                            and advanced irrigation systems for high-value horticultural exports.</p>
+                                        <div class="opportunity-card__progress-wrap">
+                                            <div class="opportunity-card__progress-header">
+                                                <span class="opportunity-card__progress-val">65%</span>
+                                                <span class="opportunity-card__progress-label">Raised of $500,000</span>
+                                            </div>
+                                            <div class="opportunity-card__bar-bg">
+                                                <div class="opportunity-card__bar-fill" style="width: 65%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="opportunity-card__metrics">
+                                            <div class="opportunity-card__metric">
+                                                <div class="opportunity-card__metric-label">Min. Entry</div>
+                                                <div class="opportunity-card__metric-value">$1,000</div>
+                                            </div>
+                                            <div class="opportunity-card__metric">
+                                                <div class="opportunity-card__metric-label">Structure</div>
+                                                <div class="opportunity-card__metric-value">Equity</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="opportunity-card__footer">
+                                        <a href="https://investors.crowdaxe.com"
+                                            class="btn btn--gold opportunity-card__btn">View details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infrastructure Only Panel -->
+                <div class="tab__panel" id="sector-infra" role="tabpanel">
+                    <div class="opportunities__sectors">
+                        <div class="opportunities__sector-group">
+                            <div class="opportunities__sector-header">
+                                <div class="opportunities__sector-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                                    </svg>
+                                </div>
+                                <h3 class="opportunities__sector-name">Infrastructure &amp; Energy</h3>
+                            </div>
+                            <div class="opportunities__grid">
+                                <div class="opportunity-card">
+                                    <div class="opportunity-card__badge">Project-Based</div>
+                                    <div class="opportunity-card__image-wrap">
+                                        <img src="images/hero-bg.jpg" alt="Solar Infrastructure Project"
+                                            class="opportunity-card__img">
+                                    </div>
+                                    <div class="opportunity-card__body">
+                                        <h3 class="opportunity-card__title">SunStrike Solar Farm (Phase II)</h3>
+                                        <div class="opportunity-card__issuer">Energy Capital Partners</div>
+                                        <p class="opportunity-card__desc">Structured debt issuance for the construction
+                                            of 5MW
+                                            solar capacity serving independent industrial clusters.</p>
+                                        <div class="opportunity-card__progress-wrap">
+                                            <div class="opportunity-card__progress-header">
+                                                <span class="opportunity-card__progress-val">22%</span>
+                                                <span class="opportunity-card__progress-label">Raised of
+                                                    $1,200,000</span>
+                                            </div>
+                                            <div class="opportunity-card__bar-bg">
+                                                <div class="opportunity-card__bar-fill" style="width: 22%;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="opportunity-card__metrics">
+                                            <div class="opportunity-card__metric">
+                                                <div class="opportunity-card__metric-label">Min. Entry</div>
+                                                <div class="opportunity-card__metric-value">$1,000</div>
+                                            </div>
+                                            <div class="opportunity-card__metric">
+                                                <div class="opportunity-card__metric-label">Expected Yield</div>
+                                                <div class="opportunity-card__metric-value">12% Fixed</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="opportunity-card__footer">
+                                        <a href="https://investors.crowdaxe.com"
+                                            class="btn btn--gold opportunity-card__btn">View details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Only Panel (Empty) -->
+                <div class="tab__panel" id="sector-tech" role="tabpanel">
+                    <div class="opportunities__sectors">
+                        <div style="text-align: center; padding: var(--space-12) 0;">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5"
+                                style="color: var(--text-muted); margin-bottom: var(--space-4); opacity: 0.5;">
+                                <path
+                                    d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
+                                <path d="M7.5 4.21l4.5 2.6 4.5-2.6" />
+                                <path d="M12 22V12" />
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                            </svg>
+                            <h3 class="opportunities__sector-name" style="margin-bottom: var(--space-2);">Mining &
+                                Energy</h3>
+                            <p class="section-subtitle">New high-yield opportunities in resource extraction and
+                                renewable energy are currently undergoing due diligence. Register to be notified upon
+                                launch.</p>
+                            <div style="margin-top: var(--space-6);">
+                                <a href="#register" class="btn btn--outline">Notify Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- REGISTER CTA -->
     <section class="cta-final" id="register">
         <div class="cta-final__bg" aria-hidden="true"></div>
@@ -374,7 +648,7 @@
                     <a href="risk.html" class="footer__link">Risk Disclosure</a>
                     <a href="resources/Crowdaxe - Rules &amp; Terms of Use 30.01.2026.pdf" class="footer__link"
                         download>Terms &amp; Conditions</a>
-                    <a href="resources/Crowdaxe - Privacy Policy 30012026.pdf" class="footer__link" download>Privacy
+                    <a href="resources/Crowdaxe - Privacy Policy 20022026.pdf" class="footer__link" download>Privacy
                         Policy</a>
                     <a href="resources/Crowdaxe - Investor Terms 30012026.pdf" class="footer__link" download>Investor
                         Terms</a>
@@ -385,7 +659,7 @@
                 <span>&copy; 2026 Crowdaxe Capital (Private) Limited. All rights reserved.</span>
                 <div class="footer__legal-links">
                     <a href="#" class="footer__link">Terms</a>
-                    <a href="#" class="footer__link">Privacy</a>
+                    <a href="resources/Crowdaxe - Privacy Policy 20022026.pdf" class="footer__link" download>Privacy</a>
                     <a href="risk.html" class="footer__link">Risk</a>
                 </div>
             </div>

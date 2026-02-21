@@ -2145,6 +2145,21 @@ section {
     font-weight: 600;
 }
 
+.nav__dropdown-divider {
+    height: 1px;
+    background: var(--border-light);
+    margin: var(--space-2) var(--space-5);
+}
+
+.nav__dropdown-header {
+    padding: var(--space-2) var(--space-5);
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
 /* ============================================
    TABS
    ============================================ */

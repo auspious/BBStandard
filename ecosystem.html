@@ -30,6 +30,26 @@
             </div>
             <div class="nav__links" id="navLinks">
                 <div class="nav__item"><a href="index.html" class="nav__link">Home</a></div>
+                <!-- Invest -->
+                <div class="nav__item nav__item--dropdown">
+                    <a href="#" class="nav__link">Invest</a>
+                    <button class="nav__dropdown-toggle" aria-label="Expand Invest menu">
+                        <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path d="M6 9l6 6 6-6" />
+                        </svg>
+                    </button>
+                    <div class="nav__dropdown" role="menu">
+                        <a href="index.html#live-opportunities" class="nav__dropdown-link"
+                            role="menuitem">Opportunities</a>
+                        <div class="nav__dropdown-divider"></div>
+                        <div class="nav__dropdown-header">Markets</div>
+                        <a href="markets.html#primary" class="nav__dropdown-link" role="menuitem">Primary Market</a>
+                        <a href="markets.html#secondary" class="nav__dropdown-link" role="menuitem">Secondary Market</a>
+                        <div class="nav__dropdown-divider"></div>
+                        <a href="ecosystem.html" class="nav__dropdown-link" role="menuitem">Ecosystem</a>
+                    </div>
+                </div>
                 <div class="nav__item nav__item--dropdown">
                     <a href="about.html" class="nav__link">About Us</a>
                     <button class="nav__dropdown-toggle" aria-label="Expand About Us menu">
@@ -74,21 +94,6 @@
                     <div class="nav__dropdown" role="menu">
                         <a href="investor-protection.html" class="nav__dropdown-link" role="menuitem">Overview</a>
                         <a href="risk.html" class="nav__dropdown-link" role="menuitem">Risk</a>
-                    </div>
-                </div>
-                <div class="nav__item nav__item--dropdown">
-                    <a href="markets.html" class="nav__link">Markets</a>
-                    <button class="nav__dropdown-toggle" aria-label="Expand Markets menu">
-                        <svg class="nav__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2.5">
-                            <path d="M6 9l6 6 6-6" />
-                        </svg>
-                    </button>
-                    <div class="nav__dropdown" role="menu">
-                        <a href="markets.html#primary" class="nav__dropdown-link" role="menuitem">Primary Market</a>
-                        <a href="markets.html#secondary" class="nav__dropdown-link" role="menuitem">Secondary Market</a>
-                        <a href="markets.html#flow" class="nav__dropdown-link" role="menuitem">Market Flow</a>
-                        <a href="ecosystem.html" class="nav__dropdown-link" role="menuitem">Ecosystem</a>
                     </div>
                 </div>
                 <a href="https://investors.crowdaxe.com" class="btn btn--gold btn--sm nav__mobile-cta">Register Here</a>
@@ -176,114 +181,7 @@
         </div>
     </section>
 
-    <!-- LIVE OPPORTUNITIES -->
-    <section class="opportunities" id="live-opportunities">
-        <div class="container">
-            <div class="reveal">
-                <span class="section-label">Active Market</span>
-                <h2 class="section-title">Live Investment Opportunities</h2>
-                <p class="section-subtitle">Discover structured investment opportunities currently open for
-                    subscription.
-                    All offerings are regulated and hosted within the SECZ Sandbox framework.</p>
-            </div>
 
-            <div class="opportunities__grid" id="opportunitiesContainer">
-                <!-- Skeleton Loading State (Visible by default, removed when data loads) -->
-                <div class="opportunity-card opportunity-card--skeleton">
-                    <div class="opportunity-card__image-wrap skeleton-box"></div>
-                    <div class="opportunity-card__body">
-                        <div class="skeleton-box" style="height: 24px; width: 80%; margin-bottom: 8px;"></div>
-                        <div class="skeleton-box" style="height: 14px; width: 40%; margin-bottom: 16px;"></div>
-                        <div class="skeleton-box" style="height: 60px; width: 100%; margin-bottom: 24px;"></div>
-                        <div class="skeleton-box" style="height: 40px; width: 100%; margin-bottom: 12px;"></div>
-                        <div class="opportunity-card__metrics">
-                            <div class="skeleton-box" style="height: 30px; width: 100%;"></div>
-                            <div class="skeleton-box" style="height: 30px; width: 100%;"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Featured Placeholder 1 -->
-                <div class="opportunity-card reveal">
-                    <div class="opportunity-card__badge">Private Equity</div>
-                    <div class="opportunity-card__image-wrap">
-                        <img src="images/market-context.jpg" alt="Commercial Agriculture Expansion"
-                            class="opportunity-card__img">
-                    </div>
-                    <div class="opportunity-card__body">
-                        <h3 class="opportunity-card__title">Agri-Hub Export Expansion</h3>
-                        <div class="opportunity-card__issuer">ZimAgro Holdings Ltd</div>
-                        <p class="opportunity-card__desc">Funding for the acquisition of cold-chain logistics and
-                            advanced irrigation systems for high-value horticultural exports.</p>
-
-                        <div class="opportunity-card__progress-wrap">
-                            <div class="opportunity-card__progress-header">
-                                <span class="opportunity-card__progress-val">65%</span>
-                                <span class="opportunity-card__progress-label">Raised of $500,000</span>
-                            </div>
-                            <div class="opportunity-card__bar-bg">
-                                <div class="opportunity-card__bar-fill" style="width: 65%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="opportunity-card__metrics">
-                            <div class="opportunity-card__metric">
-                                <div class="opportunity-card__metric-label">Min. Entry</div>
-                                <div class="opportunity-card__metric-value">$1,000 / ZWG Equiv.</div>
-                            </div>
-                            <div class="opportunity-card__metric">
-                                <div class="opportunity-card__metric-label">Structure</div>
-                                <div class="opportunity-card__metric-value">Equity (Series A)</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="opportunity-card__footer">
-                        <a href="https://investors.crowdaxe.com" class="btn btn--gold opportunity-card__btn">View
-                            details</a>
-                    </div>
-                </div>
-
-                <!-- Featured Placeholder 2 -->
-                <div class="opportunity-card reveal reveal-delay-2">
-                    <div class="opportunity-card__badge">Project-Based</div>
-                    <div class="opportunity-card__image-wrap">
-                        <img src="images/hero-bg.jpg" alt="Solar Infrastructure Project" class="opportunity-card__img">
-                    </div>
-                    <div class="opportunity-card__body">
-                        <h3 class="opportunity-card__title">SunStrike Solar Farm (Phase II)</h3>
-                        <div class="opportunity-card__issuer">Energy Capital Partners</div>
-                        <p class="opportunity-card__desc">Structured debt issuance for the construction of 5MW solar
-                            capacity serving independent industrial clusters.</p>
-
-                        <div class="opportunity-card__progress-wrap">
-                            <div class="opportunity-card__progress-header">
-                                <span class="opportunity-card__progress-val">22%</span>
-                                <span class="opportunity-card__progress-label">Raised of $1,200,000</span>
-                            </div>
-                            <div class="opportunity-card__bar-bg">
-                                <div class="opportunity-card__bar-fill" style="width: 22%;"></div>
-                            </div>
-                        </div>
-
-                        <div class="opportunity-card__metrics">
-                            <div class="opportunity-card__metric">
-                                <div class="opportunity-card__metric-label">Min. Entry</div>
-                                <div class="opportunity-card__metric-value">$1,000 / ZWG Equiv.</div>
-                            </div>
-                            <div class="opportunity-card__metric">
-                                <div class="opportunity-card__metric-label">Expected Yield</div>
-                                <div class="opportunity-card__metric-value">12% Fixed</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="opportunity-card__footer">
-                        <a href="https://investors.crowdaxe.com" class="btn btn--gold opportunity-card__btn">View
-                            details</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- CTA -->
     <section class="cta-final">
@@ -339,7 +237,7 @@
                     <a href="risk.html" class="footer__link">Risk Disclosure</a>
                     <a href="resources/Crowdaxe - Rules &amp; Terms of Use 30.01.2026.pdf" class="footer__link"
                         download>Terms &amp; Conditions</a>
-                    <a href="resources/Crowdaxe - Privacy Policy 30012026.pdf" class="footer__link" download>Privacy
+                    <a href="resources/Crowdaxe - Privacy Policy 20022026.pdf" class="footer__link" download>Privacy
                         Policy</a>
                     <a href="resources/Crowdaxe - Investor Terms 30012026.pdf" class="footer__link" download>Investor
                         Terms</a>
@@ -350,7 +248,7 @@
                 <span>&copy; 2026 Crowdaxe Capital (Private) Limited. All rights reserved.</span>
                 <div class="footer__legal-links">
                     <a href="#" class="footer__link">Terms</a>
-                    <a href="#" class="footer__link">Privacy</a>
+                    <a href="resources/Crowdaxe - Privacy Policy 20022026.pdf" class="footer__link" download>Privacy</a>
                     <a href="risk.html" class="footer__link">Risk</a>
                 </div>
             </div>
