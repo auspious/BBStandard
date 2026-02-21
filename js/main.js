@@ -111,6 +111,16 @@
                 toggleDropdown();
             });
 
+            // Handle clicking the main link (for items with dropdowns)
+            var mainLink = item.querySelector('.nav__link');
+            if (mainLink) {
+                mainLink.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    toggleDropdown();
+                });
+            }
+
             // Keyboard on toggle button
             triggerBtn.addEventListener('keydown', function (e) {
                 var links = Array.from(dropdown.querySelectorAll('.nav__dropdown-link'));
